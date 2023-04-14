@@ -1,0 +1,25 @@
+.nav_bar {
+  position: fixed;
+  color: white;
+  top: 0;
+  border-bottom:  1px solid rgba(256, 256, 256, .1);
+  background-color: transparent;
+  cursor: pointer;
+
+  span {
+    width: auto;
+    padding: 16px 28px;
+  }
+}
+
+.nav_bar--active {
+  border-bottom: 3px solid white;
+}
+
+.bg--white {
+  background: whitesmoke;
+}
+
+.nav_bar_onchange {
+  background-color: gray;
+}

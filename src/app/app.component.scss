@@ -1,0 +1,30 @@
+.container {
+  margin-top: 60px;
+}
+
+.parallax {
+  position: relative;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 72px;
+  color: white;
+  font-weight: 700;
+  mix-blend-mode: difference;
+}

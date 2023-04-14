@@ -1,0 +1,17 @@
+
+@media(max-width: 600px) {
+  .transportation {
+    &--img {
+      width: 100vw;
+    }
+  }
+}
+
+.transportation--description {
+  padding: 40px;
+}
+
+.text--align {
+  text-align: justify;
+}
+
