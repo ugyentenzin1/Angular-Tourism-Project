@@ -25,6 +25,11 @@
 .heading {
   font-size: 72px;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   mix-blend-mode: difference;
+  z-index: -1;
+}
+
+.relative {
+  position: relative;
 }

@@ -20,6 +20,8 @@ import { TransportationComponent } from './transportation/transportation.compone
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { StaffInfoComponent } from './about-us/staff-info/staff-info.component';
 import {MatCardModule} from "@angular/material/card";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import {MatCardModule} from "@angular/material/card";
     ExtendedModule,
     FlexModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

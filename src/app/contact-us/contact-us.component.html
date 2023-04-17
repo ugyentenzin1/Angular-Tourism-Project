@@ -1,1 +1,20 @@
-<p>contact-us works!</p>
+<div fxLayout="row" fxLayoutAlign="center center" class="contact-us font-medium">
+  <div fxFlex="60" fxLayout="row">
+    <img width="50%" src="https://www.nationsonline.org/maps/bhutan_map.jpg" alt="map">
+  </div>
+  <div fxFlex="40" class="contact-us__form">
+    <p class="contact-us__heading">Reach To Us</p>
+    <form action="" fxLayout="row wrap">
+      <mat-form-field appearance="fill" class="form-filed" fxFlexFill>
+        <input matInput type="text" placeholder="name" class="name">
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="form-filed" fxFlexFill>
+        <input matInput type="email" placeholder="email">
+      </mat-form-field>
+      <mat-form-field appearance="fill" fxFlexFill>
+        <mat-label>Message</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+    </form>
+  </div>
+</div>
