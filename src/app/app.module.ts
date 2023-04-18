@@ -22,6 +22,7 @@ import { StaffInfoComponent } from './about-us/staff-info/staff-info.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { TravelInfoComponent } from './travel-info/travel-info.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {MatInputModule} from "@angular/material/input";
     PackagesComponent,
     TransportationComponent,
     ContactUsComponent,
-    StaffInfoComponent
+    StaffInfoComponent,
+    TravelInfoComponent
   ],
   imports: [
     BrowserModule,

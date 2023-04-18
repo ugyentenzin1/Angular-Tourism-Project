@@ -1,33 +1,19 @@
-.container {
-  margin-top: 60px;
-}
-
 .parallax {
-  position: relative;
-  height: 80vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  filter: brightness(0.4);
+  @apply relative h-[80vh] bg-fixed bg-center bg-no-repeat bg-cover brightness-50 z-[-1];
 }
 
 .parallax-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+  @apply absolute top-[50%] left-[50%] text-white text-center;
 }
 
 .heading {
+  @apply text-7xl text-white font-extrabold z-[-1];
+}
+
+.font-size {
   font-size: 72px;
-  color: white;
   font-weight: 400;
-  mix-blend-mode: difference;
-  z-index: -1;
 }
 
 .relative {

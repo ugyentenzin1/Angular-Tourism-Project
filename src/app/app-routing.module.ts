@@ -5,10 +5,12 @@ import {AboutUsComponent} from "./about-us/about-us.component";
 import {PackagesComponent} from "./packages/packages.component";
 import {TransportationComponent} from "./transportation/transportation.component";
 import {ContactUsComponent} from "./contact-us/contact-us.component";
+import {TravelInfoComponent} from "./travel-info/travel-info.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'about_us', component: AboutUsComponent},
+  {path: 'travel_info', component: TravelInfoComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'packages', component: PackagesComponent},
   {path: 'transportation', component: TransportationComponent},

@@ -1,0 +1,13 @@
+.img {
+  animation: spin infinite round(360);
+}
+
+@keyframes spin {
+  0% {
+    rotate: round(260);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

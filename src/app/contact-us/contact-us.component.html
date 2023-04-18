@@ -1,20 +1,21 @@
-<div fxLayout="row" fxLayoutAlign="center center" class="contact-us font-medium">
-  <div fxFlex="60" fxLayout="row">
+<div class="flex flex-row justify-center items-center contact-us font-medium p-[36px]">
+  <div fxFlex="60" fxLayout="row" class="flex flex-row w-[60%]">
     <img width="50%" src="https://www.nationsonline.org/maps/bhutan_map.jpg" alt="map">
   </div>
-  <div fxFlex="40" class="contact-us__form">
+  <div class="contact-us__form w-[40%]">
     <p class="contact-us__heading">Reach To Us</p>
-    <form action="" fxLayout="row wrap">
-      <mat-form-field appearance="fill" class="form-filed" fxFlexFill>
+    <form action="" class="flex flex-row flex-wrap">
+      <mat-form-field appearance="fill" class="form-filed w-full">
         <input matInput type="text" placeholder="name" class="name">
       </mat-form-field>
-      <mat-form-field appearance="fill" class="form-filed" fxFlexFill>
+      <mat-form-field appearance="fill" class="form-filed w-full">
         <input matInput type="email" placeholder="email">
       </mat-form-field>
-      <mat-form-field appearance="fill" fxFlexFill>
+      <mat-form-field appearance="fill" class="w-full">
         <mat-label>Message</mat-label>
         <textarea matInput></textarea>
       </mat-form-field>
+      <button mat-button color="primary" class="bg-amber-300 active:bg-blue-300 !py-[10px] !px-[80px]"> Submit</button>
     </form>
   </div>
 </div>
