@@ -4,18 +4,20 @@
   </div>
   <div class="contact-us__form w-[40%]">
     <p class="contact-us__heading">Reach To Us</p>
-    <form action="" class="flex flex-row flex-wrap">
+    <div class="flex flex-row flex-wrap">
       <mat-form-field appearance="fill" class="form-filed w-full">
+        <mat-label>Name</mat-label>
         <input matInput type="text" placeholder="name" class="name">
       </mat-form-field>
       <mat-form-field appearance="fill" class="form-filed w-full">
-        <input matInput type="email" placeholder="email">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" placeholder="email">
       </mat-form-field>
       <mat-form-field appearance="fill" class="w-full">
         <mat-label>Message</mat-label>
-        <textarea matInput></textarea>
+        <textarea matInput placeholder="Message"></textarea>
       </mat-form-field>
-      <button mat-button color="primary" class="bg-amber-300 active:bg-blue-300 !py-[10px] !px-[80px]"> Submit</button>
-    </form>
+      <button mat-button color="primary" class="bg-amber-300 active:bg-blue-300 !py-[10px] !px-[80px]">Submit</button>
+    </div>
   </div>
 </div>

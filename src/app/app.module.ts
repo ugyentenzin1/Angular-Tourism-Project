@@ -22,7 +22,13 @@ import { StaffInfoComponent } from './about-us/staff-info/staff-info.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import { TravelInfoComponent } from './travel-info/travel-info.component';
+import {TravelInfoComponent} from './travel-info/travel-info.component';
+import {FormsModule} from "@angular/forms";
+import {MatMenuModule} from "@angular/material/menu";
+import { TrekkingComponent } from './packages/trekking/trekking.component';
+import {HttpClientModule} from "@angular/common/http";
+import { FestivalComponent } from './packages/festival/festival.component';
+import { SacredPlacesComponent } from './packages/sacred-places/sacred-places.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,10 @@ import { TravelInfoComponent } from './travel-info/travel-info.component';
     TransportationComponent,
     ContactUsComponent,
     StaffInfoComponent,
-    TravelInfoComponent
+    TravelInfoComponent,
+    TrekkingComponent,
+    FestivalComponent,
+    SacredPlacesComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +61,11 @@ import { TravelInfoComponent } from './travel-info/travel-info.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
+    MatMenuModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HeaderComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

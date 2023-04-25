@@ -1,14 +1,14 @@
-<div>
+<div class="font-text">
   <mat-toolbar color="primary" [ngClass]="{'nav_bar_onchange': hasScrolled}" class="nav_bar flex flex-col justify-start sm:justify-center sm:flex-row">
     <button mat-icon-button fxHide.gt-sm (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span fxHide.lt-sm  routerLink="home" routerLinkActive="nav_bar--active">HOME</span>
-    <span fxHide.lt-sm routerLink="about_us" routerLinkActive="nav_bar--active">ABOUT US</span>
+    <span fxHide.lt-sm routerLink="home" routerLinkActive="nav_bar--active">HOME</span>
     <span fxHide.lt-sm routerLink="travel_info" routerLinkActive="nav_bar--active">TRAVEL INFO</span>
-    <span fxHide.lt-sm  routerLink="packages" routerLinkActive="nav_bar--active">PACKAGES</span>
-    <span fxHide.lt-sm  routerLink="transportation" routerLinkActive="nav_bar--active">TRANSPORTATION</span>
-    <span fxHide.lt-sm  routerLink="contact_us" routerLinkActive="nav_bar--active">CONTACT US</span>
+    <span fxHide.lt-sm routerLink="packages" routerLinkActive="nav_bar--active">PACKAGES</span>
+    <span fxHide.lt-sm routerLink="transportation" routerLinkActive="nav_bar--active">TRANSPORTATION</span>
+    <span fxHide.lt-sm routerLink="contact_us" routerLinkActive="nav_bar--active">CONTACT US</span>
+    <span fxHide.lt-sm routerLink="about_us" routerLinkActive="nav_bar--active">ABOUT US</span>
   </mat-toolbar>
   <mat-sidenav-container>
     <mat-sidenav #sidenav>

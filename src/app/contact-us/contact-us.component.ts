@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from "rxjs";
+import {ContactUs} from "../Interfaces/contactUs";
+import {ContactUsService} from "../Services/contact-us.service";
 
 @Component({
   selector: 'app-contact-us',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor() { }
+  messages!: Observable<ContactUs[]>;
+
+  constructor(private contactUsServices: ContactUsService ) { }
 
   ngOnInit(): void {
   }

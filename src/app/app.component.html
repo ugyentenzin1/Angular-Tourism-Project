@@ -1,24 +1,30 @@
 <app-header></app-header>
 <section>
   <div>
-  <div class="parallax" [style.background-image]="'url(' + backgroundImage + ')'">
+  <div class="parallax">
   </div>
   <div class="parallax-content">
-    <h1 class="font-size">WELCOME TO BHUTAN</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    <h1 class="font-size font-heading">WELCOME TO BHUTAN</h1>
+    <div class="mt-[36px]">
+      <input matInput type="text" placeholder="Search" class="text-black px-[16px] py-[8px] rounded-3xl">
+      <button mat-icon-button>
+        <mat-icon class="text-4xl">search</mat-icon>
+      </button>
+    </div>
+
   </div>
   </div>
 </section>
-<div>
+<div class="p-[36px]">
   <router-outlet></router-outlet>
-  <section class="relative">
-    <div>
-      <div class="parallax" [style.background-image]="'url(' + backgroundImageFooter + ')'">
+</div>
+<section class="relative">
+  <div>
+    <div class="parallax" [style.background-image]="'url(' + backgroundImageFooter + ')'">
     </div>
     <div class="parallax-content">
-      <h1 class="heading">THANK YOU</h1>
+      <h1 class="heading font-heading">THANK YOU</h1>
     </div>
-    </div>
-  </section>
-</div>
+  </div>
+</section>
 <app-footer></app-footer>

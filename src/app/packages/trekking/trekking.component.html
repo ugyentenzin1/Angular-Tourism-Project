@@ -1,0 +1,13 @@
+<div class="flex flex-col justify-center items-center">
+  <p class="text-6xl">Trekking</p>
+  <p class="text-2xl my-[32px]">Lets make this trekking a One of your best memory!!!</p>
+</div>
+<div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px]">
+  <mat-card class="!p-0 w-[30%] min-h-fit cursor-pointer hover:shadow-2xl hover:scale-110"
+            *ngFor="let item of trekkingPackages">
+    <mat-card-content>
+      <img width="480px" height="304px" src="{{item.image}}">
+      <p class="text-center text-4xl font-text">{{item.place}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
