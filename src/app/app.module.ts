@@ -29,6 +29,7 @@ import { TrekkingComponent } from './packages/trekking/trekking.component';
 import {HttpClientModule} from "@angular/common/http";
 import { FestivalComponent } from './packages/festival/festival.component';
 import { SacredPlacesComponent } from './packages/sacred-places/sacred-places.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { SacredPlacesComponent } from './packages/sacred-places/sacred-places.co
     MatInputModule,
     FormsModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    SwiperModule
   ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

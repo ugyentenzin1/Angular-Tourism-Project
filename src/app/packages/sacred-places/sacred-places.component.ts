@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Package} from "../../Interfaces/packages";
+import {PackagesService} from "../../Services/packages.service";
+import {PackageType} from "../../Interfaces/packageType";
 
 @Component({
   selector: 'app-sacred-places',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SacredPlacesComponent implements OnInit {
 
-  constructor() { }
+  scaredPlaces!: PackageType[];
+
+  constructor(private packageService: PackagesService) { }
 
   ngOnInit(): void {
+    this.packageService.getById('0').subscribe(({subPackages}) => {
+      this.scaredPlaces = subPackages;
+    })
   }
-
 }

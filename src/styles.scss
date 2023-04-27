@@ -2,9 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~swiper/swiper-bundle.css";
 
-
-html, body { height: 100%; }
+html, body { height: 100%; scroll-behavior: smooth !important;}
 body { margin: 0; font-family: 'Crimson Pro', serif;
   font-size: 20px !important; line-height: 1.75rem}
 .font-heading {
@@ -14,4 +14,37 @@ body { margin: 0; font-family: 'Crimson Pro', serif;
 .font-text {
   font-family: 'Crimson Pro', serif;
 }
+
+.header-line::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.header-line:hover::after {
+  transform: scaleX(1);
+}
+
+.animate {
+  animation: slide-in-left 1s ease-in 0s 1 normal both;
+  transform: translateX(-150px);
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 

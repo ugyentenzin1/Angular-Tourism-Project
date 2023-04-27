@@ -48,3 +48,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.swiper{
+  width: 80%;
+}
+
+::ng-deep.swiper-wrapper {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  height: 400px;
+}
+.test {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 100%;
+  height: 100%;
+
+  .img_swiper {
+    height: 100% !important;
+  }
+}

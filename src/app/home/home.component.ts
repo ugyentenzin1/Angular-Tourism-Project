@@ -1,5 +1,8 @@
 import {Component, OnInit, Output} from '@angular/core';
 import {EventEmitter} from "@angular/core";
+import {SwiperOptions} from "swiper";
+import SwiperCore, {Navigation, Pagination, Scrollbar, A11y} from 'swiper';
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
   selector: 'app-home',
@@ -13,4 +16,18 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public swiperOptions: SwiperOptions = {
+    // define your swiper options here
+    loop:true,
+    speed: 800,
+    slidesPerView: 3,
+    navigation: true,
+    pagination: true,
+    allowSlidePrev: true,
+    allowTouchMove: true,
+    touchEventsTarget:"container",
+    spaceBetween: 20,
+    followFinger: true,
+    autoplay : true,
+  };
 }

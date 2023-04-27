@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {PackageType} from "../../Interfaces/packageType";
+import {PackagesService} from "../../Services/packages.service";
 
 @Component({
   selector: 'app-festival',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FestivalComponent implements OnInit {
 
-  constructor() { }
+  festivalsEvents!: PackageType[];
+
+  constructor(private packageService: PackagesService) { }
 
   ngOnInit(): void {
+    this.packageService.getById('1').subscribe(({subPackages})=> {
+      this.festivalsEvents = subPackages
+    })
   }
 
 }

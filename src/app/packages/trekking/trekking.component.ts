@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Package} from "../../Interfaces/packages";
 import {PackagesService} from "../../Services/packages.service";
 import {PackageType} from "../../Interfaces/packageType";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-trekking',
@@ -12,7 +13,8 @@ export class TrekkingComponent implements OnInit {
 
   trekkingPackages!: PackageType[];
 
-  constructor(private packageService: PackagesService) { }
+  constructor(private packageService: PackagesService,
+              private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.packageService.getById('2').subscribe(({subPackages})=> {
