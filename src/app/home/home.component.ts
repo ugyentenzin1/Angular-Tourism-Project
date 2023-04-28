@@ -10,8 +10,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  backgroundImage = "https://www.bhutanacorn.com/wp-content/uploads/2020/08/Paro-Taktsang-1-1920x610-1.jpg";
-
+   backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jWlFM8Kv3JiavpqL6tJ8qyoCcyVazRVfuA&usqp=CAU'
   constructor() { }
 
   ngOnInit(): void {
@@ -25,9 +24,19 @@ export class HomeComponent implements OnInit {
     pagination: true,
     allowSlidePrev: true,
     allowTouchMove: true,
-    touchEventsTarget:"container",
     spaceBetween: 20,
-    followFinger: true,
-    autoplay : true,
+    effect:"cube",
+    cubeEffect:{
+      shadow: true,
+      shadowScale:0.94,
+      slideShadows: true,
+      shadowOffset: 16,
+    }
   };
+
+   url = ''
+
+  redirect() {
+
+  }
 }
