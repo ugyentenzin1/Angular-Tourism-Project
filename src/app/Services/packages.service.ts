@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {Observable} from "rxjs";
 import {Package} from "../Interfaces/packages";
 import {HttpClient} from "@angular/common/http";
+import {PackageType} from "../Interfaces/packageType";
+import {Details} from "../Interfaces/Details";
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +18,7 @@ export class PackagesService {
     return this.http.get<Package[]>(`${this.httpUrl}/packages`)
   }
 
-  getById(id: string): Observable<Package>{
+  getById(id: string | null): Observable<Package>{
     return this.http.get<Package>(`${this.httpUrl}/packages/${id}`);
   }
 }

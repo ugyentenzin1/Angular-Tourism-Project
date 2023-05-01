@@ -22,7 +22,9 @@ export class PackagesComponent implements OnInit {
    );
   }
 
-  navigateToEachComponent(url: string):void {
-    this.router.navigate([url]);
+  navigateToEachComponent(id:number):void {
+    const selectedPackage = this.packages[id]
+    const packageId = selectedPackage.id
+    this.router.navigate(['subpackages', id]);
   }
 }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TrekkingComponent } from './trekking.component';
+import { SubpackagesComponent } from './subpackages.component';
 
-describe('TrekkingComponent', () => {
-  let component: TrekkingComponent;
-  let fixture: ComponentFixture<TrekkingComponent>;
+describe('SubpackagesComponent', () => {
+  let component: SubpackagesComponent;
+  let fixture: ComponentFixture<SubpackagesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TrekkingComponent ]
+      declarations: [ SubpackagesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TrekkingComponent);
+    fixture = TestBed.createComponent(SubpackagesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

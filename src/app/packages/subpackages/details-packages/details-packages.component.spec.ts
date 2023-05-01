@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SacredPlacesComponent } from './sacred-places.component';
+import { DetailsPackagesComponent } from './details-packages.component';
 
-describe('SacredPlacesComponent', () => {
-  let component: SacredPlacesComponent;
-  let fixture: ComponentFixture<SacredPlacesComponent>;
+describe('DetailsPackagesComponent', () => {
+  let component: DetailsPackagesComponent;
+  let fixture: ComponentFixture<DetailsPackagesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SacredPlacesComponent ]
+      declarations: [ DetailsPackagesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SacredPlacesComponent);
+    fixture = TestBed.createComponent(DetailsPackagesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

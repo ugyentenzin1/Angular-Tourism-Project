@@ -1,0 +1,15 @@
+<div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px] wrapper p-[20px] rounded-2xl">
+  <mat-card class="!p-0 w-[30%] h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:shadow-2xl hover:scale-105"
+            [ngStyle]="{'background-image':'url('+item.image+')'}" *ngFor="let item of subPackages; let i = index">
+    <mat-card-content class="h-full">
+      <div class="flex flex-col justify-between h-full">
+        <p class="text-center text-4xl font-text text-background">{{item.place}}</p>
+        <div class="text-background py-[8px] px-[16px]">
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto
+            asperiores culpa dolorum fugiat id labore possimus sed voluptate. Iste.</p>
+          <button mat-button (click)="details(i)">Show Details</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

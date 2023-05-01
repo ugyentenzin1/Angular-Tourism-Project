@@ -25,11 +25,10 @@ import {MatInputModule} from "@angular/material/input";
 import {TravelInfoComponent} from './travel-info/travel-info.component';
 import {FormsModule} from "@angular/forms";
 import {MatMenuModule} from "@angular/material/menu";
-import { TrekkingComponent } from './packages/trekking/trekking.component';
 import {HttpClientModule} from "@angular/common/http";
-import { FestivalComponent } from './packages/festival/festival.component';
-import { SacredPlacesComponent } from './packages/sacred-places/sacred-places.component';
 import { SwiperModule } from 'swiper/angular';
+import { SubpackagesComponent } from './packages/subpackages/subpackages.component';
+import { DetailsPackagesComponent } from './packages/subpackages/details-packages/details-packages.component';
 
 @NgModule({
   declarations: [
@@ -43,9 +42,8 @@ import { SwiperModule } from 'swiper/angular';
     ContactUsComponent,
     StaffInfoComponent,
     TravelInfoComponent,
-    TrekkingComponent,
-    FestivalComponent,
-    SacredPlacesComponent
+    SubpackagesComponent,
+    DetailsPackagesComponent
   ],
   imports: [
     BrowserModule,
