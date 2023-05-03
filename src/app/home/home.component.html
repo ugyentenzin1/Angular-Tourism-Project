@@ -1,11 +1,12 @@
 <div>
+  <p class="text-4xl font-text text-center">Gallery</p>
   <swiper [config]="swiperOptions" class="swiper">
     <ng-template swiperSlide *ngFor="let item of [1,2,3,4]">
       <mat-card class="test !p-0 cursor-pointer hover:shadow-xl hover:brightness-75 hover:scale-105 w-full h-[full]"
-      (click)="redirect()">
+                (click)="redirect()">
         <mat-card-content class="h-full w-full">
           <div class="text-justify font-text p-[16px] bg-blue-300 background h-full w-full flex flex-col justify-between items-center"
-          [ngStyle]="{'background-image ':'url('+ backgroundImage+')'}">
+               [ngStyle]="{'background-image ':'url('+ backgroundImage+')'}">
             <span></span>
             <p class="text-black text-md py-[8px] px-[24px] text-background">Paro Taktsang(the Sacred Tiger Nest)<br>Paro, Bhutan</p>
           </div>
@@ -15,11 +16,11 @@
   </swiper>
 </div>
 
-<div class="flex bg-white text-black leading-7">
-  <div class="container_div flex justify-center mt-[120px]">
-    <p class="text-6xl">About Bhutan</p>
+<div class="flex bg-white text-black leading-7 bg-gray-800 text-white mx-[-40px]">
+  <div class="flex justify-center items-center w-[30%] ml-[80px]">
+    <p class="text-7xl">About Bhutan</p>
   </div>
-  <div class="container_div_two">
+  <div class="w-[60%] p-[4rem] flex flex-col justify-center items-center ml-[100px]">
     <h3 class="mb-[24px] text-center text-4xl font-bold">The Land Of Thunder Dragon</h3>
     <p class="text-justify">Bhutan, a hidden kingdom nestled in the towering Himalayan range, is a highly coveted
       destination that even seasoned travelers consider a privilege to visit. The region boasts of ancient sacred monasteries perched on sheer cliffs,
@@ -34,23 +35,15 @@
   </div>
 </div>
 <div class="flex bg-white text-black">
-  <div class="w-[50%] p-[2rem]">
-    <p class="text-justify">Bhutan is a land of unparalleled natural beauty that offers stunning landscapes and breathtaking vistas.
-      The country's unique geography, nestled in the eastern Himalayas, boasts snow-capped mountains, verdant valleys,
-      dense forests, and rushing rivers. The natural beauty of Bhutan is evident in the many national parks and nature
-      reserves that are home to rare and exotic flora and fauna. One such example is the Royal Manas National Park, which
-      is home to Bengal tigers, one-horned rhinoceroses, Asian elephants, and other rare species. The Phobjikha Valley,
-      known for its black-necked cranes, is a pristine and untouched glacial valley that offers some of the most picturesque
-      views in Bhutan. The Paro Valley, with its terraced rice fields, traditional farmhouses, and the iconic Paro Taktsang
-      monastery, is another popular destination for tourists. The beauty of Bhutan is not only in its natural landscapes but
-      also in its traditional architecture, with intricate wood carvings and colorful paintings adorning the country's many
-      dzongs(fortress), monasteries, and temples. Bhutan's unique culture, pristine natural beauty, and traditional architecture make
-      it a must-visit destination for those seeking an authentic and enriching travel experience. Gagel Tours and travels ensure
-      that his tourist doesn't regret the visit to BHUTAN.
-    </p>
-  </div>
-  <div class="w-[50%] flex justify-center items-center">
-    <img width="500" class="hover:brightness-75 cursor-pointer" src="https://pickyourtrail.com/blog/wp-content/uploads/2020/05/6590269813_45d2bbea04_b-1.jpg">
+  <div class="w-[70%] p-[6rem]">
+    <p class="text-8xl font-text mb-[16px]">What We Do?</p>
+    <p class="text-justify">Opportunitiess for challenging hikes and pleasant strolls are scattered all over this planet; you just need to know where to find them. We do. Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out there, waiting for you to walk all over them. We’re proud of our record of successful ascents (over 92% of our travellers make it to the top of Kili, depending on the route), but it’s our CEOs and local guides that make the journey itself as memorable as the summit. And if you’re not into big climbs, don’t sweat it; we’ve got loads of lower-impact walks and iconic treks you’ll love, too.</p>
+    <div class="mt-[30px] flex flex-row justify-evenly">
+      <div class="flex flex-col items-center text-6xl" *ngFor="let item of icon">
+        <i class="{{item.icon}}"></i>
+        <p class="mt-[8px] text-4xl">{{item.name}}</p>
+      </div>
+    </div>
   </div>
 </div>
 

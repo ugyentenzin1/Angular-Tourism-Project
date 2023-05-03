@@ -1,16 +1,22 @@
 <div class="mb-[32px] leading-7 animate">
-  <div class="flex flex-col justify-center items-center p-[36px]">
-    <p class="text-4xl mb-[24px] header-animate">Packages</p>
-    <p class="text-justify leading-7">Gagel Travels and Tours offers a variety of tour packages to explore the beautiful country of Bhutan.
-      Whether you love trekking, cultural experiences, festivals or want a customized trip, there is a package for you.
-      Their tours range from 5 to 11 days, so you can choose the best duration to fit your schedule. Happiness Kingdom
-      Travels ensures an unforgettable journey tailored to your interests and preferences. They offer an authentic and
-      immersive adventure, allowing you to experience the enchanting magic of Bhutan. Book your dream trip with them
-      now.</p>
+  <div class="flex items-center items-center">
+    <div class="flex flex-col justify-center items-center p-[36px] w-[60%]">
+      <p class="text-8xl text-left mb-[24px] header-animate">We Offer You with!</p>
+      <p class="text-justify leading-7">Gagel Travels and Tours offers a variety of tour packages to explore the beautiful country of Bhutan.
+        Whether you love trekking, cultural experiences, festivals or want a customized trip, there is a package for you.
+        Their tours range from 5 to 11 days, so you can choose the best duration to fit your schedule. Happiness Kingdom
+        Travels ensures an unforgettable journey tailored to your interests and preferences. They offer an authentic and
+        immersive adventure, allowing you to experience the enchanting magic of Bhutan. Book your dream trip with them
+        now.</p>
+    </div>
+    <div class="text-8xl flex flex-row justify-center items-center">
+      <i class="fa-regular fa-arrow-down-to-arc fa-beat-fade"></i>
+      <span>DOWN</span>
+    </div>
   </div>
   <hr>
   <div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px] wrapper p-[20px] rounded-2xl">
-    <mat-card class="!p-0 w-[30%] h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:shadow-2xl hover:scale-105"
+    <mat-card class="!p-0 w-[30%] h-[400px] bg-no-repeat bg-center bg-cover cursor-pointer hover:shadow-2xl hover:scale-105"
               [ngStyle]="{'background-image':'url('+item.image+')'}" *ngFor="let item of packages; let i = index"
               (click)="navigateToEachComponent(i)">
       <mat-card-content class="h-full">

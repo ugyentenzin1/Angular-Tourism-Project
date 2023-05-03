@@ -10,8 +10,24 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-   backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jWlFM8Kv3JiavpqL6tJ8qyoCcyVazRVfuA&usqp=CAU'
+  backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jWlFM8Kv3JiavpqL6tJ8qyoCcyVazRVfuA&usqp=CAU'
   constructor() { }
+
+  icon = [
+    {
+    icon: 'fa-sharp fa-solid fa-person-hiking',
+    name:'Hiking'
+  },
+    {
+      icon: 'fa-solid fa-car',
+      name:'By Car'
+    },
+    {
+      icon: 'fa-regular fa-person-biking',
+      name:'Bike Hike'
+    },
+
+  ]
 
   ngOnInit(): void {
   }
@@ -34,7 +50,7 @@ export class HomeComponent implements OnInit {
     }
   };
 
-   url = ''
+  url = ''
 
   redirect() {
 
