@@ -11,3 +11,7 @@
     transform: rotate(360deg);
   }
 }
+
+.card-clip {
+  clip-path: circle(200px at 50% 50%);
+}

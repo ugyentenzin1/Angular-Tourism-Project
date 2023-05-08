@@ -15,8 +15,8 @@ const routes: Routes = [
   {path: 'about_us', component: AboutUsComponent},
   {path: 'travel_info', component: TravelInfoComponent},
   {path: 'packages', component: PackagesComponent},
-  {path: 'subpackages/:id', component: SubpackagesComponent},
-  {path: 'subpackages/details/:id', component: DetailsPackagesComponent},
+  {path: 'packages/:id', component: SubpackagesComponent},
+  {path: 'packages/:id/details', component: DetailsPackagesComponent},
   {path: 'transportation', component: TransportationComponent},
   {path: 'contact_us', component: ContactUsComponent}
 ];

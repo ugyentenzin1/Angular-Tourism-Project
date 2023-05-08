@@ -39,11 +39,11 @@ body { margin: 0; font-family: 'Crimson Pro', serif;
 
 @keyframes slide-in-left {
   from {
-    transform: translateX(-300px);
+    transform: translateY(300px);
   }
 
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

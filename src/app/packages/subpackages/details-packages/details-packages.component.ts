@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {PackagesService} from "../../../Services/packages.service";
 import {Details} from "../../../Interfaces/Details";
+import {PackageType} from "../../../Interfaces/packageType";
+import {get} from "http";
+import {Package} from "../../../Interfaces/packages";
+import {switchMap} from "rxjs";
 
 @Component({
   selector: 'app-details-packages',
@@ -10,15 +14,17 @@ import {Details} from "../../../Interfaces/Details";
 })
 export class DetailsPackagesComponent implements OnInit {
 
-  details!: any | undefined;
+  details?: Details[];
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService) { }
 
   ngOnInit(): void {
-    const test =this.route.paramMap.subscribe(val => {
-      const id = val.get('id');
-      console.log(id);
+    this.route.queryParams.pipe(
+      switchMap(value => this.packageService.getBySubpackages(value['subId']))
+    ).subscribe(({details})=> {
+      console.log(details)
+      this.details = details;
     })
   }
 }

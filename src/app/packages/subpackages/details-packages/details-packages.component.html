@@ -1,12 +1,8 @@
-<div class="mb-[32px] leading-7 animate">
+<div class="mb-[32px] leading-7">
   <div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px]">
     <mat-card class="!p-0 w-[30%] min-h-fit cursor-pointer hover:shadow-2xl hover:scale-105"
-              *ngFor="let item of details;">
-      <mat-card-content>
-        <img src="{{item.image}}" class="w-full">
-        <p class="text-center text-4xl font-text">{{item.url}}</p>
-        <p class="p-[16px] text-justify font-text text-xl">{{item.explain}}</p>
-      </mat-card-content>
+              *ngIf="details">
+
     </mat-card>
   </div>
 </div>

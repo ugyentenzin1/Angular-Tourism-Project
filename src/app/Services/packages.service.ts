@@ -21,4 +21,8 @@ export class PackagesService {
   getById(id: string | null): Observable<Package>{
     return this.http.get<Package>(`${this.httpUrl}/packages/${id}`);
   }
+
+  getBySubpackages(id: string | null): Observable<PackageType>{
+    return this.http.get<PackageType>(`${this.httpUrl}/packages/subpackages/${id}`);
+  }
 }

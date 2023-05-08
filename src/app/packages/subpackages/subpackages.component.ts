@@ -15,7 +15,10 @@ export class SubpackagesComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
-              private router : Router) { }
+              private router : Router) {
+
+    console.log('running')
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(val => {
@@ -29,8 +32,7 @@ export class SubpackagesComponent implements OnInit {
   }
 
   details(id:any){
-    const details = this.subPackages[id];
-    const detailsId = details.id;
-    this.router.navigate(['subpackages/details', id])
+    this.subPackages[id].id
+    this.router.navigate([`details`], {relativeTo: this.route, queryParams:{subId: id}})
   }
 }

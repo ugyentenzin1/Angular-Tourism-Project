@@ -1,33 +1,36 @@
-<div class="mb-[32px] leading-7 animate">
-  <div class="flex items-center items-center">
-    <div class="flex flex-col justify-center items-center p-[36px] w-[60%]">
-      <p class="text-8xl text-left mb-[24px] header-animate">We Offer You with!</p>
+<div class="mb-[32px] leading-7">
+  <div class="flex items-center items-center p-[16px]">
+    <div class="flex flex-col justify-center items-center p-[36px] w-[70%]">
+      <p class="text-8xl !text-left mb-[24px] header-animate">We Offer You with!</p>
       <p class="text-justify leading-7">Gagel Travels and Tours offers a variety of tour packages to explore the beautiful country of Bhutan.
         Whether you love trekking, cultural experiences, festivals or want a customized trip, there is a package for you.
-        Their tours range from 5 to 11 days, so you can choose the best duration to fit your schedule. Happiness Kingdom
-        Travels ensures an unforgettable journey tailored to your interests and preferences. They offer an authentic and
+        Their tours range from 5 to 11 days, so you can choose the best duration to fit your schedule. Gagel
+        Travels and Tours ensures an unforgettable journey tailored to your interests and preferences. They offer an authentic and
         immersive adventure, allowing you to experience the enchanting magic of Bhutan. Book your dream trip with them
         now.</p>
     </div>
-    <div class="text-8xl flex flex-row justify-center items-center">
-      <i class="fa-regular fa-arrow-down-to-arc fa-beat-fade"></i>
-      <span>DOWN</span>
+    <div class="flex flex-row justify-center items-center w-[30%] bg-gray-800 cursor-pointer p-[120px] card-clip" (click)="showPackages()">
+      <div class="flex flex-col justify-center items-center mt-[24px] text-white text-8xl">
+        <i class="fa-solid fa-arrow-down fa-beat"></i>
+        <p class="text-4xl text-center mt-[24px]">Click Me To View Packages</p>
+      </div>
     </div>
   </div>
-  <hr>
-  <div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px] wrapper p-[20px] rounded-2xl">
-    <mat-card class="!p-0 w-[30%] h-[400px] bg-no-repeat bg-center bg-cover cursor-pointer hover:shadow-2xl hover:scale-105"
-              [ngStyle]="{'background-image':'url('+item.image+')'}" *ngFor="let item of packages; let i = index"
-              (click)="navigateToEachComponent(i)">
-      <mat-card-content class="h-full">
-        <div class="flex flex-col justify-between h-full">
-          <p class="text-center text-4xl font-text text-background">{{item.label}}</p>
-          <div class="text-background py-[8px] px-[16px]">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto
-              asperiores culpa dolorum fugiat id labore possimus sed voluptate. Iste.</p>
+  <div *ngIf="packageShow">
+    <p class="text-6xl font-text text-center tracking-wide">Packages</p>
+    <div class="flex flex-row flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
+      <div class="!p-0 w-[25%] h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
+           [ngStyle]="{'background-image':'url('+item.image+')'}" *ngFor="let item of packages; let i = index"
+           (click)="navigateToEachComponent(i)">
+        <div class="h-full">
+          <div class="flex flex-col justify-between h-full">
+            <p></p>
+            <div class="bg-white py-[8px] px-[16px]">
+              <p class="text-center text-3xl tracking-widest">{{item.label}}</p>
+            </div>
           </div>
         </div>
-      </mat-card-content>
-    </mat-card>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import {Package} from "../Interfaces/packages";
 import {PackagesService} from "../Services/packages.service";
 import {Router} from "@angular/router";
@@ -13,6 +13,8 @@ export class PackagesComponent implements OnInit {
 
   packages!: Package[];
 
+  packageShow: boolean = false;
+
   constructor(private packageService: PackagesService,
               private router: Router) { }
 
@@ -25,6 +27,10 @@ export class PackagesComponent implements OnInit {
   navigateToEachComponent(id:number):void {
     const selectedPackage = this.packages[id]
     const packageId = selectedPackage.id
-    this.router.navigate(['subpackages', id]);
+    this.router.navigate(['packages', id]);
+  }
+
+  showPackages() {
+    this.packageShow = !this.packageShow;
   }
 }
