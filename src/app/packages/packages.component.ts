@@ -3,6 +3,7 @@ import {Package} from "../Interfaces/packages";
 import {PackagesService} from "../Services/packages.service";
 import {Router} from "@angular/router";
 import {PackageType} from "../Interfaces/packageType";
+import {AnimationStyleMetadata, style} from "@angular/animations";
 
 @Component({
   selector: 'app-packages',
@@ -12,6 +13,7 @@ import {PackageType} from "../Interfaces/packageType";
 export class PackagesComponent implements OnInit {
 
   packages!: Package[];
+  test!: AnimationStyleMetadata;
 
   packageShow: boolean = false;
 
@@ -20,8 +22,8 @@ export class PackagesComponent implements OnInit {
 
   ngOnInit(): void {
     this.packageService.getPackages().subscribe(
-     (val) => this.packages = val
-   );
+      (val) => this.packages = val
+    );
   }
 
   navigateToEachComponent(id:number):void {
@@ -32,5 +34,8 @@ export class PackagesComponent implements OnInit {
 
   showPackages() {
     this.packageShow = !this.packageShow;
+   this.test = style({
+      background: 'yellow'
+    })
   }
 }

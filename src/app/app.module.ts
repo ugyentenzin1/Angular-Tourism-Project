@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
@@ -29,6 +28,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { SwiperModule } from 'swiper/angular';
 import { SubpackagesComponent } from './packages/subpackages/subpackages.component';
 import { DetailsPackagesComponent } from './packages/subpackages/details-packages/details-packages.component';
+import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -63,7 +63,7 @@ import { DetailsPackagesComponent } from './packages/subpackages/details-package
     FormsModule,
     MatMenuModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
   ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {routingAnimation} from "./Interfaces/app.animation";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routingAnimation]
 })
 export class AppComponent {
   title = 'e-commerce';
