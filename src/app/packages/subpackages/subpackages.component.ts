@@ -24,7 +24,7 @@ export class SubpackagesComponent implements OnInit {
     this.route.paramMap.subscribe(val => {
       const id = val.get('id');
       console.log(id);
-      this.packageService.getById(id).subscribe(({subPackages})=> {
+      this.packageService.getById(id).subscribe(({subPackages}):void => {
         this.subPackages = subPackages
         }
       )
@@ -33,6 +33,7 @@ export class SubpackagesComponent implements OnInit {
 
   details(id:any){
     this.subPackages[id].id
-    this.router.navigate([`details`], {relativeTo: this.route, queryParams:{subId: id}})
+    this.router.navigate([`details`],
+      {relativeTo: this.route, queryParams:{subId: id}})
   }
 }

@@ -10,7 +10,7 @@ export const routingAnimation = trigger('slideAnimation', [
         style({
           transform: 'translateY(100%)',
         }),
-        animate('0.9s ease', style({transform: 'translateY(0%)'}))
+        animate('0.5s ease', style({transform: 'translateY(0%)'}))
 
       ], {optional: true}),
 
