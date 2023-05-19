@@ -1,8 +1,48 @@
-<div class="mb-[32px] leading-7 p-[36px]">
-  <div class="flex flex-row flex-wrap justify-center items-center gap-[30px] mt-[20px]">
-    <mat-card class="!p-0 w-[30%] min-h-fit cursor-pointer hover:shadow-2xl hover:scale-105"
-              *ngIf="details">
+<div class="p-[60px] flex flex-row">
+  <div class="w-[70%] ml-[28px]">
+    <div class="my-[30px]">
+      <h1>Detailed Itinerary </h1>
+      <p class="mt-[24px] text-justify">Lorem ipsum dolor sit amet, consecrate adipisicing elit. Supernatural dolor magni
+        molests omnibus repudiate rerun temporal voluptuary voluptuous. Harm iure aerobatic provident soluta
+        tempora. Beate labor molests omnis reprehend voluptuous?</p>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let item of [1,2,3,4,5,6]; let i = index;" class="!mt-[12px] !shadow-none !rounded-none">
+        <mat-expansion-panel-header class="flex flex-row justify-between bg-blue-300 !py-[20px] h-[78px]">
+          <mat-panel-title>
+            <span class="!leading-7">DAYS {{item}} : ARRIVE AT PARO </span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="p-[30px]">
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ducimus, incidunt laudantium
+            mollitia nesciunt odio quod repellendus vel voluptatum. Accusamus consequatur dicta dolorum, eaque
+            incidunt libero, molestias porro quam quas quo rem repellendus ullam ut. Enim et fuga iusto mollitia
+            nemo numquam perspiciatis qui recusandae. Autem nemo nobis nostrum reiciendis!</p>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 
-    </mat-card>
+  <div class="w-[40%] ml-[30px] pl-[40px]">
+    <h3 class="text-black/87 !text-xl">Whats Included?</h3>
+    <ul class="leading-11 text-black/60 list-disc p-[24px]">
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur sadipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+    </ul>
+    <h3 class="text-black/87 !text-xl">Whats Not Included?</h3>
+    <ul class="leading-11 text-black/60 list-disc p-[24px]">
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
+    </ul>
+    <div>
+      <div class="flex justify-center px-[20px] py-[15px] bg-gray-800 text-white w-[250px]">
+        <span>10 Days, 9 Nights</span>
+      </div>
+    </div>
   </div>
 </div>

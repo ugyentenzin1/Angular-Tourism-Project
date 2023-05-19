@@ -29,6 +29,7 @@ import { SwiperModule } from 'swiper/angular';
 import { SubpackagesComponent } from './packages/subpackages/subpackages.component';
 import { DetailsPackagesComponent } from './packages/subpackages/details-packages/details-packages.component';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -45,26 +46,27 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
     SubpackagesComponent,
     DetailsPackagesComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
-    ExtendedModule,
-    FlexModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    FormsModule,
-    MatMenuModule,
-    HttpClientModule,
-    SwiperModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatSlideToggleModule,
+        MatSidenavModule,
+        MatListModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatButtonModule,
+        ExtendedModule,
+        FlexModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        MatMenuModule,
+        HttpClientModule,
+        SwiperModule,
+        MatExpansionModule,
+    ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]
 })

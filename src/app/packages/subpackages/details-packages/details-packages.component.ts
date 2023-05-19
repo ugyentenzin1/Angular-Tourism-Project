@@ -23,7 +23,6 @@ export class DetailsPackagesComponent implements OnInit {
     this.route.queryParams.pipe(
       switchMap(value => this.packageService.getBySubpackages(value['subId']))
     ).subscribe(({details})=> {
-      console.log(details)
       this.details = details;
     })
   }
