@@ -5,14 +5,11 @@
          (click)="details(i)">
       <div class="flex flex-col justify-between">
         <img class="h-[250px]" src="{{item.image}}">
-        <div class="bg-blue-100 p-[36px] h-[250px]">
-          <p class="text-center tracking-widest text-2xl">{{item.place}}</p>
+        <div class="bg-[#708090] text-white/60 p-[36px] h-[250px]">
+          <p class="text-center tracking-widest text-2xl text-white">{{item.place}}</p>
           <p class="text-justify tracking-wide text-sm my-[16px]">{{item.description}}</p>
           <div class="flex flex-row justify-between items-center">
-            <p class="text-centesr">{{item.days}}</p>
-            <div class="bg-blue-300 px-[30px] py-[8px] hover:bg-gray-800 hover:text-white">
-              <span>Book Now</span>
-            </div>
+            <p class="text-center text-white/87">{{item.days}}</p>
           </div>
         </div>
       </div>

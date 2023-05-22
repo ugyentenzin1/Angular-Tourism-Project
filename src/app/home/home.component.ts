@@ -10,7 +10,33 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jWlFM8Kv3JiavpqL6tJ8qyoCcyVazRVfuA&usqp=CAU'
+  backgroundImage = [
+    {
+    image: '/assets/swiper_one.avif',
+      description: 'Punakha'
+  },
+    {
+      image: '/assets/swiper_two.avif',
+      description: 'Bhutan Point'
+    },
+    {
+      image: '/assets/swiper_three.avif',
+      description: 'Thimphu City'
+    },
+    {
+      image: '/assets/swiper_four.avif',
+      description: 'Dochula'
+    },
+    {
+      image: '/assets/swiper_five.avif',
+      description: 'Paro Taktsang'
+    },
+    {
+      image: '/assets/swiper_six.avif',
+      description: 'Paro Dzong'
+    },
+
+  ];
   constructor() { }
 
   icon = [
@@ -41,13 +67,6 @@ export class HomeComponent implements OnInit {
     allowSlidePrev: true,
     allowTouchMove: true,
     spaceBetween: 20,
-    effect:"cube",
-    cubeEffect:{
-      shadow: true,
-      shadowScale:0.94,
-      slideShadows: true,
-      shadowOffset: 16,
-    }
   };
 
   url = ''

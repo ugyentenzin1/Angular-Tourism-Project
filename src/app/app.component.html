@@ -4,18 +4,12 @@
       <div class="parallax">
       </div>
       <div class="parallax-content">
-        <p class="!text-8xl font-text">WELCOME <br> TO BHUTAN</p>
-        <div class="mt-[36px]">
-          <input matInput type="text" placeholder="Search" class="text-black px-[16px] py-[8px] rounded-3xl">
-          <button mat-icon-button>
-            <mat-icon class="text-4xl">search</mat-icon>
-          </button>
-        </div>
+        <p class="!text-8xl font-text tracking-wide">WELCOME <br> TO BHUTAN</p>
       </div>
     </div>
   </section>
-  <div [@slideAnimation]="o.isActivated ? o.activatedRoute : ''">
-    <router-outlet #o="outlet"></router-outlet>
+  <div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''">
+    <router-outlet #routing="outlet"></router-outlet>
   </div>
   <section class="relative">
     <div>

@@ -8,9 +8,9 @@
     </div>
     <mat-accordion>
       <mat-expansion-panel *ngFor="let item of [1,2,3,4,5,6]; let i = index;" class="!mt-[12px] !shadow-none !rounded-none">
-        <mat-expansion-panel-header class="flex flex-row justify-between bg-blue-300 !py-[20px] h-[78px]">
+        <mat-expansion-panel-header class="flex flex-row justify-between text-white bg-[#708090] !py-[20px] h-[78px]">
           <mat-panel-title>
-            <span class="!leading-7">DAYS {{item}} : ARRIVE AT PARO </span>
+            <span class="!leading-7 text-white">DAYS {{item}} : ARRIVE AT PARO </span>
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="p-[30px]">
@@ -24,7 +24,7 @@
   </div>
 
   <div class="w-[40%] ml-[30px] pl-[40px]">
-    <h3 class="text-black/87 !text-xl">Whats Included?</h3>
+    <h3 class="text-black/87 !text-xl mt-[30px]">Whats Included?</h3>
     <ul class="leading-11 text-black/60 list-disc p-[24px]">
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
@@ -40,13 +40,11 @@
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
     </ul>
     <div>
-      <div class="flex justify-center px-[20px] py-[15px] bg-gray-800 text-white w-[250px]">
-        <span>10 Days, 9 Nights</span>
+      <div class="flex cursor-pointer justify-center px-[20px] py-[15px] bg-[#708090] text-white w-[250px]">
+        <span class="text-white">10 Days, 9 Nights</span>
       </div>
     </div>
   </div>
-
-
   <div *ngFor="let detail of details">
     <p>{{detail.url}}</p>
     <p>Test</p>

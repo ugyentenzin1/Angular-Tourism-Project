@@ -2,15 +2,14 @@
   <div>
     <p class="text-4xl font-text text-center mb-[16px]">Glimpse of Bhutan</p>
     <swiper [config]="swiperOptions" class="swiper">
-      <ng-template swiperSlide *ngFor="let item of [1,2,3,4]">
-        <mat-card class="test !p-0 cursor-pointer hover:shadow-xl hover:brightness-75
-         hover:scale-105 w-full h-[full]"
-        >
+      <ng-template swiperSlide *ngFor="let item of backgroundImage">
+        <mat-card class="test !p-0 cursor-pointer hover:shadow-xl
+         hover:scale-95 w-full h-[full]">
           <mat-card-content class="h-full w-full">
             <div class="text-justify font-text p-[16px] bg-blue-300 background h-full w-full flex flex-col justify-between items-center"
-                 [ngStyle]="{'background-image ':'url('+ backgroundImage+')'}">
+                 [ngStyle]="{'background-image ':'url('+ item.image +')'}">
               <span></span>
-              <p class="text-black text-md py-[8px] px-[24px] text-background">Paro Taktsang(the Sacred Tiger Nest)<br>Paro, Bhutan</p>
+              <p class="text-black text-md py-[8px] px-[24px] bg-white/70">{{item.description}}</p>
             </div>
           </mat-card-content>
         </mat-card>
@@ -18,9 +17,9 @@
     </swiper>
   </div>
 
-  <div class="flex leading-7 bg-[#B0CAF0] text-black/60 mt-[36px] mx-[40px]">
+  <div class="flex leading-7 bg-[#708090] text-white/70 mt-[36px] mx-[40px]">
     <div class="flex justify-center items-center w-[30%] ml-[80px]">
-      <p class="text-7xl text-black tracking-widest">About Bhutan</p>
+      <p class="text-7xl text-white tracking-widest">About Bhutan</p>
     </div>
     <div class="w-[60%] p-[4rem] flex flex-col justify-center items-center ml-[100px]">
       <h3 class="mb-[24px] text-center text-4xl font-bold tracking-wide">The Land Of Thunder Dragon</h3>
