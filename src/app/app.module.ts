@@ -30,6 +30,7 @@ import { SubpackagesComponent } from './packages/subpackages/subpackages.compone
 import { DetailsPackagesComponent } from './packages/subpackages/details-packages/details-packages.component';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
         HttpClientModule,
         SwiperModule,
         MatExpansionModule,
+        MatTooltipModule,
     ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

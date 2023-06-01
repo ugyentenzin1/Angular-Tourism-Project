@@ -9,7 +9,12 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
+
 export class HomeComponent implements OnInit {
+
+  image:string = './assets/swiper_one.avif';
+
   backgroundImage = [
     {
     image: '/assets/swiper_one.avif',
@@ -69,9 +74,12 @@ export class HomeComponent implements OnInit {
     spaceBetween: 20,
   };
 
-  url = ''
+  url = '';
 
-  redirect() {
+  treat = ['sonam', 'dawa', 'dema', 'Hem raj']
+  foods = ['burger', 'Ema Datsi', 'Kewa Datsi', 'Pizza']
 
-  }
+
+
+
 }
