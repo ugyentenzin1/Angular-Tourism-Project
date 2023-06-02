@@ -20,10 +20,13 @@ export class DetailsPackagesComponent implements OnInit {
               private packageService: PackagesService) { }
 
   ngOnInit(): void {
+    this.packageService.getById('0').subscribe(val => console.log(val))
     this.route.queryParams.pipe(
       switchMap(value => this.packageService.getBySubpackages(value['subId']))
     ).subscribe(({details})=> {
       this.details = details;
     })
+
+    console.log(this.details)
   }
 }

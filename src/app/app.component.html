@@ -1,24 +1,26 @@
-  <app-header></app-header>
-  <section>
-    <div>
-      <div class="parallax">
-      </div>
-      <div class="parallax-content">
-        <p class="!text-8xl font-text tracking-wide">WELCOME <br> TO BHUTAN</p>
-      </div>
+<app-header></app-header>
+<section>
+  <div>
+    <div class="parallax">
     </div>
-  </section>
-  <div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''">
-    <router-outlet #routing="outlet"></router-outlet>
+    <div class="parallax-content">
+      <p class="!text-8xl font-text tracking-wide">WELCOME <br> TO BHUTAN</p>
+    </div>
   </div>
-  <section class="relative">
-    <div>
-      <div class="parallax" [style.background-image]="'url(' + backgroundImageFooter + ')'">
-      </div>
-      <div class="parallax-content">
-        <h1 class="heading font-heading">THANK YOU</h1>
-      </div>
+</section>
+<div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''">
+  <router-outlet #routing="outlet"></router-outlet>
+</div>
+<section class="relative">
+  <div>
+    <div class="parallax" [style.background-image]="'url(' + backgroundImageFooter + ')'">
     </div>
-  </section>
+    <div class="parallax-content">
+      <h1 class="heading font-heading">THANK YOU</h1>
+    </div>
+  </div>
+</section>
+<div class="bg-[#708090]">
   <app-footer></app-footer>
 
+</div>
