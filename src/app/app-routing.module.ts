@@ -7,7 +7,7 @@ import {ContactUsComponent} from "./contact-us/contact-us.component";
 import {TravelInfoComponent} from "./travel-info/travel-info.component";
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: 'home', loadChildren:()=> import('./home/home/home.module').then(val => val.HomeModule)},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'about_us', component: AboutUsComponent},
   {path: 'travel_info', component: TravelInfoComponent},

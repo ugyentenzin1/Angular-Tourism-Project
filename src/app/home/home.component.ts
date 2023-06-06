@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit {
       image: '/assets/swiper_six.avif',
       description: 'Paro Dzong'
     },
-
   ];
   constructor() { }
 
@@ -78,13 +77,4 @@ export class HomeComponent implements OnInit {
       }
     }
   };
-
-  url = '';
-
-  treat = ['sonam', 'dawa', 'dema', 'Hem raj']
-  foods = ['burger', 'Ema Datsi', 'Kewa Datsi', 'Pizza']
-
-
-
-
 }
