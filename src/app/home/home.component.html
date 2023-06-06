@@ -1,6 +1,6 @@
-<div class="p-[36px]">
+<div class="md:p-[36px]">
   <div>
-    <p class="text-6xl font-text text-center mb-[16px]">Glimpse of Bhutan</p>
+    <p class="md:text-6xl mt-[16px] text-4xl  font-text text-center mb-[16px]">Glimpse of Bhutan</p>
     <swiper [config]="swiperOptions" class="swiper">
       <ng-template swiperSlide *ngFor="let item of backgroundImage">
         <mat-card class="test mr-[20px] !p-0 cursor-pointer hover:shadow-xl
@@ -17,13 +17,13 @@
     </swiper>
   </div>
 
-  <div class="flex leading-7 bg-[#708090] text-white/70 mt-[36px] mx-[68px]">
-    <div class="flex justify-center items-center w-[30%] ml-[80px]">
-      <p class="text-7xl text-white tracking-widest">About Bhutan</p>
+  <div class="md:flex md:flex-row leading-7 bg-[#708090] text-white/70 mt-[36px] md:mx-[68px] p-[24px]">
+    <div class="flex justify-center items-center md:w-[30%] md:ml-[80px] p-[16px]">
+      <p class="text-4xl md:text-7xl text-white tracking-widest">About Bhutan</p>
     </div>
-    <div class="w-[60%] p-[4rem] flex flex-col justify-center items-center ml-[100px]">
-      <h3 class="mb-[24px] text-center text-4xl font-bold tracking-wide">The Land Of Thunder Dragon</h3>
-      <p class="text-justify tracking-wide leading-7">Bhutan, a hidden kingdom nestled in the towering Himalayan range, is a highly coveted
+    <div class="md:w-[60%] md:p-[4rem] flex flex-col justify-center items-center md:ml-[100px]">
+      <h3 class="mb-[24px] text-center text-2xl md:text-4xl font-bold tracking-wide">The Land Of Thunder Dragon</h3>
+      <p class="text-justify md:tracking-wide md:leading-7">Bhutan, a hidden kingdom nestled in the towering Himalayan range, is a highly coveted
         destination that even seasoned travelers consider a privilege to visit. The region boasts of ancient sacred monasteries perched on sheer cliffs,
         colorful prayer flags lining mountain ridges, and red-robed monhanting in distant temples. During Buddhist festivals,
         vibrant masked dancers perform ancient rituals on sacred Dzong (fortress) grounds. The people of Bhutan have
@@ -36,13 +36,13 @@
     </div>
   </div>
   <div class="flex bg-white text-black">
-    <div class="w-[70%] p-[6rem]">
-      <p class="text-8xl font-text mb-[16px] tracking-wide">What We Do?</p>
-      <p class="text-justify text-black/60 tracking-wide leading-7">Opportunitiess for challenging hikes and pleasant strolls are scattered all over this planet; you just need to know where to find them. We do. Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out there, waiting for you to walk all over them. We’re proud of our record of successful ascents (over 92% of our travellers make it to the top of Kili, depending on the route), but it’s our CEOs and local guides that make the journey itself as memorable as the summit. And if you’re not into big climbs, don’t sweat it; we’ve got loads of lower-impact walks and iconic treks you’ll love, too.</p>
+    <div class="md:w-[70%] md:p-[6rem] p-[24px]">
+      <p class="md:text-8xl text-4xl font-text mb-[16px] tracking-wide">What We Do?</p>
+      <p class="text-justify text-black/60 md:tracking-wide md:leading-7">Opportunitiess for challenging hikes and pleasant strolls are scattered all over this planet; you just need to know where to find them. We do. Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out there, waiting for you to walk all over them. We’re proud of our record of successful ascents (over 92% of our travellers make it to the top of Kili, depending on the route), but it’s our CEOs and local guides that make the journey itself as memorable as the summit. And if you’re not into big climbs, don’t sweat it; we’ve got loads of lower-impact walks and iconic treks you’ll love, too.</p>
       <div class="mt-[30px] flex flex-row justify-evenly">
-        <div class="flex flex-col items-center text-6xl" *ngFor="let item of icon">
+        <div class="flex flex-col items-center text-4xl md:text-6xl" *ngFor="let item of icon">
           <i class="{{item.icon}}"></i>
-          <p class="mt-[8px] text-4xl">{{item.name}}</p>
+          <p class="mt-[8px] text-2xl md:text-4xl">{{item.name}}</p>
         </div>
       </div>
     </div>

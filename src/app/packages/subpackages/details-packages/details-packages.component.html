@@ -1,8 +1,8 @@
-<div class="p-[60px] flex flex-row">
-  <div class="w-[70%] ml-[28px]">
+<div class="md:p-[60px] flex md:flex-row flex-col">
+  <div class="md:w-[70%] ml-[28px] mr-[28px]">
     <div class="my-[30px]">
-      <h1>Detailed Itinerary </h1>
-      <p class="mt-[24px] text-justify">Lorem ipsum dolor sit amet, consecrate adipisicing elit. Supernatural dolor magni
+      <p class="text-4xl md:text-8xl">Detailed Itinerary </p>
+      <p class="mt-[24px] text-justify text-black/60">Lorem ipsum dolor sit amet, consecrate adipisicing elit. Supernatural dolor magni
         molests omnibus repudiate rerun temporal voluptuary voluptuous. Harm iure aerobatic provident soluta
         tempora. Beate labor molests omnis reprehend voluptuous?</p>
     </div>
@@ -13,8 +13,8 @@
             <span class="!leading-7 text-white">DAYS {{item}} : ARRIVE AT PARO </span>
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <div class="p-[30px]">
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ducimus, incidunt laudantium
+        <div class="md:p-[30px] p-[26px]">
+          <p class="text-justify text-black/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ducimus, incidunt laudantium
             mollitia nesciunt odio quod repellendus vel voluptatum. Accusamus consequatur dicta dolorum, eaque
             incidunt libero, molestias porro quam quas quo rem repellendus ullam ut. Enim et fuga iusto mollitia
             nemo numquam perspiciatis qui recusandae. Autem nemo nobis nostrum reiciendis!</p>
@@ -23,7 +23,7 @@
     </mat-accordion>
   </div>
 
-  <div class="w-[40%] ml-[30px] pl-[40px]">
+  <div class="md:w-[40%] w-full md:ml-[30px] pl-[40px]">
     <h3 class="text-black/87 !text-xl mt-[30px]">Whats Included?</h3>
     <ul class="leading-11 text-black/60 list-disc p-[24px]">
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
@@ -39,12 +39,13 @@
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, expedita?</li>
     </ul>
-    <div class="flex flex-row gap-5">
-      <div class="flex cursor-pointer justify-center px-[20px] py-[15px] bg-[#708090] text-white w-[250px]">
+    <div class="flex flex-row gap-5 mb-[20px]">
+      <div class="flex cursor-pointer justify-center md:px-[20px] px-[10px] md:py-[15px]
+       py-[8px] bg-[#708090] text-white md:w-[250px] w-[180px]">
         <span class="text-white">10 Days, 9 Nights</span>
       </div>
-      <div class="flex cursor-pointer justify-center
-       px-[20px] py-[15px] bg-[#708090] text-white w-[250px] hover:bg-[#B0CAF0]">
+      <div class="flex items-center cursor-pointer justify-center
+       px-[20px] md:py-[15px] bg-[#708090] text-white  hover:bg-[#B0CAF0]">
         <span class="text-white">Book Now</span>
       </div>
     </div>

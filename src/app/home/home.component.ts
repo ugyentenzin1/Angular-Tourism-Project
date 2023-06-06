@@ -66,12 +66,17 @@ export class HomeComponent implements OnInit {
     // define your swiper options here
     loop:true,
     speed: 800,
-    slidesPerView: 3,
+    slidesPerView: 1,
     navigation: true,
     pagination: true,
     allowSlidePrev: true,
     allowTouchMove: true,
     spaceBetween: 20,
+    breakpoints : {
+      700 : {
+        slidesPerView: 3,
+      }
+    }
   };
 
   url = '';

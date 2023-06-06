@@ -1,7 +1,7 @@
 <div *ngIf="subPackages" class="p-[36px]">
   <p class="text-6xl font-text text-center tracking-wide"></p>
-  <div class="flex flex-row flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
-    <div class="!p-0 w-[25%] cursor-pointer hover:brightness-95 hover:scale-95 h-[500px]" *ngFor="let item of subPackages; let i = index"
+  <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] md:p-[20px] rounded-2xl">
+    <div class="!p-0 md:w-[25%] w-full cursor-pointer hover:brightness-95 hover:scale-95 h-[500px]" *ngFor="let item of subPackages; let i = index"
          (click)="details(i)">
       <div class="flex flex-col justify-between">
         <img class="h-[250px]" src="{{item.image}}">

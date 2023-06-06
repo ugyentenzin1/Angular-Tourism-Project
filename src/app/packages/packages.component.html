@@ -1,7 +1,7 @@
-<div class="mb-[32px] leading-7 p-[36px]">
-  <div class="flex items-center items-center p-[16px]">
-    <div class="flex flex-col justify-center items-center p-[36px] w-[70%]">
-      <p class="text-8xl !text-left mb-[24px] header-animate">We Offer You with!</p>
+<div class="mb-[32px] leading-7 p-[24px] md:p-[36px]">
+  <div class="flex md:flex-row flex-col items-center items-center md:p-[16px]">
+    <div class="flex flex-col justify-center items-center md:p-[36px] md:w-[70%]">
+      <p class="md:text-8xl text-4xl !text-left mb-[24px]">We Offer You with!</p>
       <p class="text-justify leading-7">Gagel Travels and Tours offers a variety of tour packages to explore the beautiful country of Bhutan.
         Whether you love trekking, cultural experiences, festivals or want a customized trip, there is a package for you.
         Their tours range from 5 to 11 days, so you can choose the best duration to fit your schedule. Gagel
@@ -18,8 +18,8 @@
   </div>
   <div *ngIf="packageShow" [ngClass]="{test}">
     <p class="text-6xl font-text text-center tracking-wide">Packages</p>
-    <div class="flex flex-row flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
-      <div class="!p-0 w-[25%] h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
+    <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
+      <div class="!p-0 md:w-[25%] w-full h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
            [ngStyle]="{'background-image':'url('+item.image+')'}" *ngFor="let item of packages; let i = index"
            (click)="navigateToEachComponent(i)">
         <div class="h-full">
