@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'travel_info', component: TravelInfoComponent},
   {path: 'packages', loadChildren:()=> import('./packages/packages/packages.module').then(val => val.PackagesModule)},
   {path: 'faq', component: TransportationComponent},
-  {path: 'contact_us', component: ContactUsComponent}
+  {path: 'contact_us', loadChildren:()=> import('./contact-us/contact-us/contact-us.module').then(val=> val.ContactUsModule)}
 ];
 
 @NgModule({

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,7 +12,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {ExtendedModule, FlexModule} from "@angular/flex-layout";
 import { TransportationComponent } from './transportation/transportation.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
@@ -32,7 +30,6 @@ import {PackagesModule} from "./packages/packages/packages.module";
     HeaderComponent,
     FooterComponent,
     TransportationComponent,
-    ContactUsComponent,
     TravelInfoComponent,
   ],
     imports: [
@@ -55,7 +52,7 @@ import {PackagesModule} from "./packages/packages/packages.module";
         HttpClientModule,
         MatExpansionModule,
         MatTooltipModule,
-      PackagesModule
+        PackagesModule
     ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]
