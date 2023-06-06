@@ -14,7 +14,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {ExtendedModule, FlexModule} from "@angular/flex-layout";
 import { AboutUsComponent } from './about-us/about-us.component';
-import { PackagesComponent } from './packages/packages.component';
 import { TransportationComponent } from './transportation/transportation.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { StaffInfoComponent } from './about-us/staff-info/staff-info.component';
@@ -26,11 +25,10 @@ import {FormsModule} from "@angular/forms";
 import {MatMenuModule} from "@angular/material/menu";
 import {HttpClientModule} from "@angular/common/http";
 import { SwiperModule } from 'swiper/angular';
-import { SubpackagesComponent } from './packages/subpackages/subpackages.component';
-import { DetailsPackagesComponent } from './packages/subpackages/details-packages/details-packages.component';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {PackagesModule} from "./packages/packages/packages.module";
 
 @NgModule({
   declarations: [
@@ -39,13 +37,10 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     FooterComponent,
     HomeComponent,
     AboutUsComponent,
-    PackagesComponent,
     TransportationComponent,
     ContactUsComponent,
     StaffInfoComponent,
     TravelInfoComponent,
-    SubpackagesComponent,
-    DetailsPackagesComponent
   ],
     imports: [
         BrowserModule,
@@ -68,6 +63,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
         SwiperModule,
         MatExpansionModule,
         MatTooltipModule,
+      PackagesModule
     ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]
