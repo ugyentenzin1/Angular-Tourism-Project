@@ -9,7 +9,7 @@ import {TravelInfoComponent} from "./travel-info/travel-info.component";
 const routes: Routes = [
   {path: 'home', loadChildren:()=> import('./home/home/home.module').then(val => val.HomeModule)},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'about_us', component: AboutUsComponent},
+  {path: 'about_us', loadChildren:()=> import('./about-us/about-us-module/about-us-module.module').then(val=> val.AboutUsModuleModule)},
   {path: 'travel_info', component: TravelInfoComponent},
   {path: 'packages', loadChildren:()=> import('./packages/packages/packages.module').then(val => val.PackagesModule)},
   {path: 'faq', component: TransportationComponent},

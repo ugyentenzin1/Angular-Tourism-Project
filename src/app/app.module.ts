@@ -12,10 +12,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {ExtendedModule, FlexModule} from "@angular/flex-layout";
-import { AboutUsComponent } from './about-us/about-us.component';
 import { TransportationComponent } from './transportation/transportation.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { StaffInfoComponent } from './about-us/staff-info/staff-info.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
@@ -33,10 +31,8 @@ import {PackagesModule} from "./packages/packages/packages.module";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    AboutUsComponent,
     TransportationComponent,
     ContactUsComponent,
-    StaffInfoComponent,
     TravelInfoComponent,
   ],
     imports: [
