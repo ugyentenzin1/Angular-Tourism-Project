@@ -1,6 +1,5 @@
 .parallax {
-  @apply relative h-[80vh] bg-fixed bg-center bg-no-repeat bg-cover brightness-50 z-[-1];
-  background-image: url("/assets/bhutan.avif");
+  @apply relative h-[80vh] bg-[url("/assets/bhutan.avif")] bg-fixed bg-center bg-no-repeat bg-cover brightness-50 z-[-1];
 }
 
 .parallax-content {

@@ -6,7 +6,14 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#000000',
+          '87': '#0000DE'
+        },
+      }
+    },
   },
   plugins: [plugin(function ({addBase, theme
                              }){
