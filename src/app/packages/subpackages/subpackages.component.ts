@@ -3,6 +3,7 @@ import {Package} from "../../Interfaces/packages";
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PackagesService} from "../../Services/packages.service";
+import {map, pipe, Subscription, tap} from "rxjs";
 
 @Component({
   selector: 'app-subpackages',
@@ -12,10 +13,12 @@ import {PackagesService} from "../../Services/packages.service";
 export class SubpackagesComponent implements OnInit {
 
   subPackages!: PackageType[];
+  title!: Package;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
-              private router : Router) {
+              private router : Router,
+              private subscription: Subscription) {
 
     console.log('running')
   }
@@ -24,11 +27,17 @@ export class SubpackagesComponent implements OnInit {
     this.route.paramMap.subscribe(val => {
       const id = val.get('id');
       console.log(id);
-      this.packageService.getById(id).subscribe(({subPackages}):void => {
-        this.subPackages = subPackages
-        }
-      )
+      this.subscription = this.packageService.getById(id).pipe(tap(value => {
+        this.title = value;
+        this.subPackages = value.subPackages;
+      })).subscribe()
     })
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 
   details(id:any){
