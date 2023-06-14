@@ -1,22 +1,28 @@
-<div class="font-text">
+<div class="font-text relative">
   <mat-toolbar color="primary" [ngClass]="{'nav_bar_onchange': hasScrolled}" class="nav_bar flex flex-col justify-between sm:justify-center sm:flex-row">
-    <button mat-icon-button fxHide.gt-sm (click)="sidenav.toggle()">
+    <button mat-icon-button fxHide.gt-sm (click)="toogleSideNav()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="home" routerLinkActive="nav_bar--active">HOME</span>
+    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="home/home" routerLinkActive="nav_bar--active">HOME</span>
     <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="travel_info" routerLinkActive="nav_bar--active">TRAVEL INFO</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="packages" tabindex="1" routerLinkActive="nav_bar--active">PACKAGES</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="about_us" routerLinkActive="nav_bar--active">ABOUT US</span>
+    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="packages/packages" tabindex="1" routerLinkActive="nav_bar--active">PACKAGES</span>
+    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="about_us/about_us" routerLinkActive="nav_bar--active">ABOUT US</span>
     <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="faq" routerLinkActive="nav_bar--active">FAQ</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="contact_us" routerLinkActive="nav_bar--active">CONTACT US</span>
+    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="contact_us/contact_us" routerLinkActive="nav_bar--active">CONTACT US</span>
   </mat-toolbar>
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav>
-      <a mat-list-item href="m">HOME</a>
-      <a mat-list-item href="m">ABOUT US</a>
-      <a mat-list-item href="m">PACKAGES</a>
-      <a mat-list-item href="m">TRANSPORTATION</a>
-      <a mat-list-item href="m">CONTACT US</a>
-    </mat-sidenav>
-  </mat-sidenav-container>
+  <div class="fixed bg-[slategray] h-[100dvh] w-full text-white p-[24px] z-[10]" *ngIf="sideNav">
+    <div class="flex items-center justify-end">
+      <button mat-icon-button (click)="toogleSideNav()">
+        <mat-icon class="text-3xl">close</mat-icon>
+      </button>
+    </div>
+    <div class="flex flex-col text-center items-center justify-center">
+      <span class="header-line  text-3xl tracking-widest" routerLink="home/home" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">HOME</span>
+      <span class="header-line mt-[40px] text-3xl tracking-widest" routerLink="travel_info" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">TRAVEL INFO</span>
+      <span class="header-line mt-[40px] text-3xl tracking-widest" routerLink="packages/packages" tabindex="1" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">PACKAGES</span>
+      <span class="header-line mt-[40px] text-3xl tracking-widest" routerLink="about_us/about_us" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">ABOUT US</span>
+      <span class="header-line mt-[40px] text-3xl tracking-widest" routerLink="faq" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">FAQ</span>
+      <span class="header-line mt-[40px] text-3xl tracking-widest" routerLink="contact_us/contact_us" routerLinkActive="nav_bar--mobile" (click)="toogleSideNav()">CONTACT US</span>
+    </div>
+  </div>
 </div>

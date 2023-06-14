@@ -9,8 +9,7 @@ import {MatSidenav} from "@angular/material/sidenav";
 export class HeaderComponent implements OnInit {
 
   hasScrolled = false;
-  @ViewChild('sidenav') sidenav: MatSidenav | undefined;
-
+  sideNav:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +20,7 @@ export class HeaderComponent implements OnInit {
     document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ? this.hasScrolled = true : this.hasScrolled = false;
   }
 
+  toogleSideNav() {
+    this.sideNav = !this.sideNav;
+  }
 }

@@ -28,8 +28,8 @@ export class PackagesComponent implements OnInit {
   }
 
   navigateToEachComponent(id:number):void {
-    const selectedPackage = this.packages[id]
-    const packageId = selectedPackage.id
+    // const selectedPackage = this.packages[id]
+    // const packageId = selectedPackage.id
     this.router.navigate(['packages', id]);
   }
 
