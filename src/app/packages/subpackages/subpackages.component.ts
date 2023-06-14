@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Package} from "../../Interfaces/packages";
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -10,10 +10,11 @@ import {map, pipe, Subscription, tap} from "rxjs";
   templateUrl: './subpackages.component.html',
   styleUrls: ['./subpackages.component.scss']
 })
-export class SubpackagesComponent implements OnInit {
+export class SubpackagesComponent implements OnInit, OnDestroy {
 
   subPackages!: PackageType[];
   title!: Package;
+  subscription!: Subscription;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
@@ -26,11 +27,15 @@ export class SubpackagesComponent implements OnInit {
     this.route.paramMap.subscribe(val => {
       const id = val.get('id');
       console.log(id);
-       this.packageService.getById(id).pipe(tap(value => {
+       this.subscription =this.packageService.getById(id).pipe(tap(value => {
         this.title = value;
         this.subPackages = value.subPackages;
       })).subscribe()
     })
+  }
+
+  ngOnDestroy() {
+    this.subscription && this.subscription.unsubscribe();
   }
 
   details(id:any){
