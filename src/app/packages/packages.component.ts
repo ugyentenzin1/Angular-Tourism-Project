@@ -1,10 +1,8 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Package} from "../Interfaces/packages";
 import {PackagesService} from "../Services/packages.service";
-import {NavigationEnd, Router} from "@angular/router";
-import {PackageType} from "../Interfaces/packageType";
+import {Router} from "@angular/router";
 import {AnimationStyleMetadata, style} from "@angular/animations";
-import {filter} from "rxjs";
 
 @Component({
   selector: 'app-packages',
