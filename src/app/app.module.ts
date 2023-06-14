@@ -23,6 +23,7 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {PackagesModule} from "./packages/packages/packages.module";
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import {PackagesModule} from "./packages/packages/packages.module";
         HttpClientModule,
         MatExpansionModule,
         MatTooltipModule,
-        PackagesModule
+        PackagesModule,
+        MatTableModule
     ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]
