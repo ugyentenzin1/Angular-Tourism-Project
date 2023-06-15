@@ -3,7 +3,8 @@ import {Package} from "../../Interfaces/packages";
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PackagesService} from "../../Services/packages.service";
-import {map, pipe, Subscription, tap} from "rxjs";
+import {Subscription, switchMap, tap} from "rxjs";
+import {Details} from "../../Interfaces/Details";
 
 @Component({
   selector: 'app-subpackages',
@@ -13,6 +14,7 @@ import {map, pipe, Subscription, tap} from "rxjs";
 export class SubpackagesComponent implements OnInit, OnDestroy {
 
   subPackages!: PackageType[];
+  detailed!: Details;
   title!: Package;
   subscription!: Subscription;
 
@@ -22,15 +24,16 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(val => {
-      const id = val.get('id');
-      console.log(id);
-       this.subscription =this.packageService.getById(id).pipe(
-         tap(value => {
+    this.subscription = this.route.paramMap.pipe(
+      switchMap(val => {
+        const id = val.get('id');
+        return this.packageService.getById(id);
+      }),
+      tap(value => {
         this.title = value;
         this.subPackages = value.subPackages;
-      })).subscribe()
-    })
+      })
+    ).subscribe();
   }
 
   ngOnDestroy() {
