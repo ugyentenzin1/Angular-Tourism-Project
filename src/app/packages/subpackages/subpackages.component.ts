@@ -19,15 +19,14 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
               private router : Router) {
-
-    console.log('running')
   }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(val => {
       const id = val.get('id');
       console.log(id);
-       this.subscription =this.packageService.getById(id).pipe(tap(value => {
+       this.subscription =this.packageService.getById(id).pipe(
+         tap(value => {
         this.title = value;
         this.subPackages = value.subPackages;
       })).subscribe()

@@ -1,7 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FaqService} from "../Services/faq.service";
 import {Faq} from "../Interfaces/faq";
-import {animate, state, style, transition, trigger} from "@angular/animations";
 import {Subscription} from "rxjs";
 
 @Component({
@@ -17,11 +16,12 @@ export class TransportationComponent implements OnInit, OnDestroy {
   constructor(private faqService: FaqService) { }
 
   ngOnInit(): void {
-   this.subscription = this.faqService.getFaq().subscribe(val=> this.faq = val )
+    this.subscription = this.faqService.getFaq().
+      subscribe(val=> this.faq = val)
   }
 
   ngOnDestroy() {
-    this.subscription && this.subscription.unsubscribe()
+    this.subscription && this.subscription.unsubscribe();
   }
 
 }

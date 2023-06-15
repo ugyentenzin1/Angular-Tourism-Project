@@ -15,3 +15,8 @@
 .card-clip {
   clip-path: circle(200px at 50% 50%);
 }
+
+
+.test {
+  @apply border-b border-primary-87;
+}
