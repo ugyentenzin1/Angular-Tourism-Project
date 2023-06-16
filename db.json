@@ -264,7 +264,37 @@
       "title": "What distinguishes the cuisine in Bhutan from other culinary traditions?",
       "answer": "Bhutanese cuisine is notable for its prominent use of chillies in almost every dish. Rice serves as the primary component in the majority of Bhutanese meals. In essence, the defining feature of Bhutanese cuisine is its spiciness, providing a distinct culinary experience."
     }
+  ],
+  "test": [
+    {
+      "id": "0",
+      "iternary": "thanks",
+      "details": "come to where you come"
+
+    },
+    {
+      "id": "1",
+      "iternary": "When is the isn ",
+      "details": "yes thats the thing"
+    },
+    {
+      "id": "2",
+      "iternary": "Hippa potoamas",
+      "details": "yes thats the thing"
+    },
+    {
+      "id": "3",
+      "iternary": "thanks",
+      "details": "yes thats the thing"
+    },
+    {
+      "id": "4",
+      "iternary": "thanks",
+      "details": "yes thats the thing"
+    }
   ]
 }
+
+
 
 

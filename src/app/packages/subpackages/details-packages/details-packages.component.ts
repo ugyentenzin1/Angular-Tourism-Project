@@ -5,7 +5,8 @@ import {Details} from "../../../Interfaces/Details";
 import {PackageType} from "../../../Interfaces/packageType";
 import {get} from "http";
 import {Package} from "../../../Interfaces/packages";
-import {switchMap} from "rxjs";
+import {filter, map, Observable, Subscription, switchMap, tap} from "rxjs";
+import {TestMpa} from "../../../Interfaces/testMpa";
 
 @Component({
   selector: 'app-details-packages',
@@ -14,19 +15,16 @@ import {switchMap} from "rxjs";
 })
 export class DetailsPackagesComponent implements OnInit {
 
-  details?: Details[];
+  details?: TestMpa;
+  subscription?: Subscription;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService) { }
 
   ngOnInit(): void {
-    this.packageService.getById('0').subscribe(val => console.log(val))
-    this.route.queryParams.pipe(
-      switchMap(value => this.packageService.getBySubpackages(value['subId']))
-    ).subscribe(({details})=> {
-      this.details = details;
-    })
-
-    console.log(this.details)
+ this.subscription = this.route.queryParams.pipe(
+      switchMap(value => this.packageService.getTest(value['subId'])),
+      tap(value => this.details = value )
+    ).subscribe();
   }
 }
