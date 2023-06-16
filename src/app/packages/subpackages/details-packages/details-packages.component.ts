@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {PackagesService} from "../../../Services/packages.service";
-import {Details} from "../../../Interfaces/Details";
-import {PackageType} from "../../../Interfaces/packageType";
-import {get} from "http";
-import {Package} from "../../../Interfaces/packages";
-import {filter, map, Observable, Subscription, switchMap, tap} from "rxjs";
+import {Subscription, switchMap, tap} from "rxjs";
 import {TestMpa} from "../../../Interfaces/testMpa";
 
 @Component({
