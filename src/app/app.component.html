@@ -8,7 +8,7 @@
     </div>
   </div>
 </section>
-<div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''">
+<div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''" class="content_bg">
   <router-outlet #routing="outlet"></router-outlet>
 </div>
 <section class="relative">
