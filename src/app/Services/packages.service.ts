@@ -4,6 +4,7 @@ import {Package} from "../Interfaces/packages";
 import {HttpClient} from "@angular/common/http";
 import {PackageType} from "../Interfaces/packageType";
 import {Details} from "../Interfaces/Details";
+import {TestMpa} from "../Interfaces/testMpa";
 
 @Injectable({
   providedIn: 'root'
@@ -24,5 +25,9 @@ export class PackagesService {
 
   getBySubpackages(id: any): Observable<PackageType>{
     return this.http.get<PackageType>(`${this.httpUrl}/packages/${id}`);
+  }
+
+  getTest(id:any):Observable<TestMpa> {
+    return this.http.get<TestMpa>(`${this.httpUrl}/test/${id}`)
   }
 }

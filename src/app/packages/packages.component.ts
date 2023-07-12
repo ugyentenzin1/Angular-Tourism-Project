@@ -31,8 +31,6 @@ export class PackagesComponent implements OnInit, OnDestroy {
   }
 
   navigateToEachComponent(id:number):void {
-    // const selectedPackage = this.packages[id]
-    // const packageId = selectedPackage.id
     this.router.navigate(['packages', id]);
   }
 
