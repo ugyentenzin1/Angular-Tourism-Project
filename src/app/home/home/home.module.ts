@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent} from "../home.component";
-import {SwiperModule} from "swiper/angular";
+import { SwiperModule} from "swiper/angular";
 import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
@@ -13,8 +12,9 @@ import {MatCardModule} from "@angular/material/card";
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SwiperModule,
-    MatCardModule
-  ]
+    MatCardModule,
+    SwiperModule
+  ],
+  providers : [SwiperModule]
 })
 export class HomeModule { }
