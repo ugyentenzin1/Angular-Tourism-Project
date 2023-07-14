@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from "rxjs";
-import {ContactUs} from "../Interfaces/contactUs";
 import {ContactUsService} from "../Services/contact-us.service";
-import {Form, FormBuilder, FormControl, FormControlName, FormGroup} from "@angular/forms";
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import {error} from "@angular/compiler/src/util";
+import { FormBuilder, FormGroup} from "@angular/forms";
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact-us',
@@ -21,7 +18,6 @@ export class ContactUsComponent implements OnInit {
     whatsapp_no: '',
     tourist_no: ''
 });
-  messages!: Observable<ContactUs[]>;
 
   constructor(private contactUsServices: ContactUsService ,
               private fb: FormBuilder) { }
