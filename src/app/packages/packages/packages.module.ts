@@ -6,6 +6,7 @@ import { DetailsPackagesComponent} from "../subpackages/details-packages/details
 import {SubpackagesComponent} from "../subpackages/subpackages.component";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatButtonModule} from "@angular/material/button";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatButtonModule} from "@angular/material/button";
         CommonModule,
         PackagesRoutingModule,
         MatExpansionModule,
-        MatButtonModule
+        MatButtonModule,
+        MatDialogModule
     ]
 })
 export class PackagesModule { }

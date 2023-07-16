@@ -16,7 +16,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {TravelInfoComponent} from './travel-info/travel-info.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatMenuModule} from "@angular/material/menu";
 import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -24,6 +24,9 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {PackagesModule} from "./packages/packages/packages.module";
 import {MatTableModule} from "@angular/material/table";
+import { BookNowComponent } from './packages/subpackages/details-packages/book-now/book-now.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatDatepickerModule} from "@angular/material/datepicker";
 
 @NgModule({
   declarations: [
@@ -32,30 +35,34 @@ import {MatTableModule} from "@angular/material/table";
     FooterComponent,
     TransportationComponent,
     TravelInfoComponent,
+    BookNowComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatSlideToggleModule,
-        MatSidenavModule,
-        MatListModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatButtonModule,
-        ExtendedModule,
-        FlexModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        MatMenuModule,
-        HttpClientModule,
-        MatExpansionModule,
-        MatTooltipModule,
-        PackagesModule,
-        MatTableModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    ExtendedModule,
+    FlexModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatMenuModule,
+    HttpClientModule,
+    MatExpansionModule,
+    MatTooltipModule,
+    PackagesModule,
+    MatTableModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatDatepickerModule
+  ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]
 })

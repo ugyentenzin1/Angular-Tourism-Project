@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit, Input} from '@angular/core';
 import {Package} from "../../Interfaces/packages";
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -17,6 +17,9 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   detailed!: Details;
   title!: Package;
   subscription!: Subscription;
+
+  @Input() packageTitle?: string;
+  @Input() content?: boolean = true;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
@@ -44,5 +47,7 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
     this.subPackages[id].id
     this.router.navigate([`details`],
       {relativeTo: this.route, queryParams:{subId: id}})
+
+    this.packageService.getBySubpackages(id).subscribe()
   }
 }
