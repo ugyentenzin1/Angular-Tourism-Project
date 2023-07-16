@@ -1,16 +1,16 @@
 <div class="font-text relative">
-  <mat-toolbar color="primary" [ngClass]="{'nav_bar_onchange': hasScrolled}" class="nav_bar flex flex-col justify-between sm:justify-center sm:flex-row">
-    <button role="button" aria-label="Menu Button" mat-icon-button fxHide.gt-sm (click)="toogleSideNav()">
-      <mat-icon>menu</mat-icon>
+  <mat-toolbar color="primary" [ngClass]="{'nav_bar_onchange': hasScrolled}" class="nav_bar flex flex-col justify-between lg:justify-center sm:flex-row">
+    <button role="button" aria-label="Menu Button" mat-icon-button fxHide.gt-sm (click)="toogleSideNav()" class="block lg:hidden">
+      <mat-icon class="text-[32px] sm:text-[44px]">menu</mat-icon>
     </button>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="home/home" routerLinkActive="nav_bar--active" aria-label="Home Tab">HOME</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="travel_info" routerLinkActive="nav_bar--active" aria-label="Travel information Tab">TRAVEL INFO</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="packages/packages" tabindex="1" routerLinkActive="nav_bar--active" aria-label="Packages Tab">PACKAGES</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="about_us/about_us" routerLinkActive="nav_bar--active" aria-label="about us tab">ABOUT US</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="faq" routerLinkActive="nav_bar--active" aria-label="Frequent asked questions and answers">FAQ</span>
-    <span fxHide.lt-sm class="header-line relative tracking-widest" routerLink="contact_us/contact_us" routerLinkActive="nav_bar--active" aria-label="contact us if you tab on it">CONTACT US</span>
+    <span class="header-line hidden lg:block relative tracking-widest" routerLink="home/home" routerLinkActive="nav_bar--active" aria-label="Home Tab">HOME</span>
+    <span class="header-line hidden lg:block relative tracking-widest"  routerLink="travel_info" routerLinkActive="nav_bar--active" aria-label="Travel information Tab">TRAVEL INFO</span>
+    <span class="header-line hidden lg:block relative tracking-widest"  routerLink="packages/packages" tabindex="1" routerLinkActive="nav_bar--active" aria-label="Packages Tab">PACKAGES</span>
+    <span class="header-line hidden lg:block relative tracking-widest"  routerLink="about_us/about_us" routerLinkActive="nav_bar--active" aria-label="about us tab">ABOUT US</span>
+    <span class="header-line hidden lg:block relative tracking-widest"  routerLink="faq" routerLinkActive="nav_bar--active" aria-label="Frequent asked questions and answers">FAQ</span>
+    <span class="header-line hidden lg:block relative tracking-widest"  routerLink="contact_us/contact_us" routerLinkActive="nav_bar--active" aria-label="contact us if you tab on it">CONTACT US</span>
   </mat-toolbar>
-  <div class="fixed bg-[slategray] h-[100dvh] w-full text-white p-[24px] z-[10]" *ngIf="sideNav">
+  <div class="fixed bg-[slategray] h-[100dvh] w-full sm:w-[40%] text-white p-[24px] z-[10]" *ngIf="sideNav">
     <div class="flex items-center justify-end">
       <button mat-icon-button (click)="toogleSideNav()" role="button" aria-label="close button for menu">
         <mat-icon class="text-3xl">close</mat-icon>

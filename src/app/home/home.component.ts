@@ -72,7 +72,11 @@ export class HomeComponent implements OnInit {
     allowTouchMove: true,
     spaceBetween: 20,
     breakpoints : {
-      700 : {
+       600 : {
+         slidesPerView: 2,
+       },
+
+      1200 : {
         slidesPerView: 3,
       }
     }
