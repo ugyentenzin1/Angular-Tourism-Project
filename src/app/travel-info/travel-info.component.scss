@@ -12,8 +12,10 @@
   }
 }
 
-.card-clip {
-  clip-path: circle(200px at 50% 50%);
+@screen lg {
+  .card-clip {
+    clip-path: circle(200px at 50% 50%);
+  }
 }
 
 

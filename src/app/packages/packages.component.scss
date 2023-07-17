@@ -17,7 +17,9 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.card-clip {
-  clip-path: circle(200px at 50% 50%);
+@screen lg {
+  .card-clip {
+    clip-path: circle(200px at 50% 50%);
+  }
 }
 
