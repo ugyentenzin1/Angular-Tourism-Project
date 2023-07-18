@@ -27,6 +27,8 @@ import {MatTableModule} from "@angular/material/table";
 import { BookNowComponent } from './packages/subpackages/details-packages/book-now/book-now.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatDatepickerModule} from "@angular/material/datepicker";
+import {AngularFireModule} from "@angular/fire/compat";
+import {environment} from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     MatTableModule,
     MatDialogModule,
     ReactiveFormsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

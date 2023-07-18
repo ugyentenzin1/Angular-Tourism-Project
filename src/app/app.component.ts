@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import {routingAnimation} from "./Interfaces/app.animation";
-import {filter} from "rxjs";
+import {filter, Observable} from "rxjs";
 import {NavigationEnd, Router} from "@angular/router";
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFireDatabase, AngularFireList} from "@angular/fire/compat/database";
+import {Package} from "./Interfaces/packages";
 
 @Component({
   selector: 'app-root',
@@ -11,10 +14,12 @@ import {NavigationEnd, Router} from "@angular/router";
 })
 export class AppComponent {
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private db: AngularFireDatabase) {
   }
   title = 'e-commerce';
  backgroundImageFooter = '/assets/paro-tak.jpeg'
+  testFire!: Observable<any[]>;
 
   ngOnInit(){
     this.router.events
@@ -25,6 +30,11 @@ export class AppComponent {
           behavior: 'smooth',
         });
       });
+  }
+
+  getFireData() {
+  this.testFire = this.db.list('/').valueChanges();
+   // console.log(this.testFire);
   }
 }
 

@@ -3,7 +3,8 @@ import {Package} from "../Interfaces/packages";
 import {PackagesService} from "../Services/packages.service";
 import {Router} from "@angular/router";
 import {AnimationStyleMetadata, style} from "@angular/animations";
-import {Subscription} from "rxjs";
+import {Observable, Subscription} from "rxjs";
+import {AngularFireDatabase} from "@angular/fire/compat/database";
 
 @Component({
   selector: 'app-packages',
@@ -16,22 +17,31 @@ export class PackagesComponent implements OnInit, OnDestroy {
   test!: AnimationStyleMetadata;
   subscription!: Subscription;
   packageShow: boolean = false;
+  firebase!: any[];
 
   constructor(private packageService: PackagesService,
               private router: Router) { }
 
   ngOnInit(): void {
-  this.subscription =  this.packageService.getPackages().subscribe(
-      (val) => this.packages = val
-    );
+  // this.subscription =  this.packageService.getPackages().subscribe(
+  //     (val) => this.packages = val
+  //   );
+  this.subscription = this.packageService.getFireDataTest().subscribe(val => {
+    console.log(val)
+    this.firebase = val
+  })
   }
 
   ngOnDestroy():void {
     this.subscription && this.subscription.unsubscribe();
   }
 
-  navigateToEachComponent(id:number):void {
-    this.router.navigate(['packages', id]);
+  // navigateToEachComponent(id:number):void {
+  //   this.router.navigate(['packages', id]);
+  // }
+
+  navigateEachComponent(label: string):void {
+    this.router.navigate(['/packages', label]);
   }
 
   showPackages() {

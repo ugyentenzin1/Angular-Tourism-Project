@@ -1,5 +1,5 @@
-<div *ngIf="subPackages" class="p-[36px]">
-  <p class="text-3xl sm:text-6xl font-text text-center tracking-wide">{{title?.label}}</p>
+<div *ngIf="eachPackages" class="p-[36px]">
+  <p class="text-3xl sm:text-6xl font-text text-center tracking-wide">{{eachPackages}}</p>
   <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] md:p-[20px] rounded-2xl" *ngIf="content">
     <div class="!p-0 md:w-[25%] w-full cursor-pointer hover:brightness-95 hover:scale-95 h-[500px]" *ngFor="let item of subPackages; let i = index"
          (click)="details(i)">

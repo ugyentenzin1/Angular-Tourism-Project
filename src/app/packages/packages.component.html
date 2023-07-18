@@ -21,7 +21,7 @@
     <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
       <div class="!p-0 md:w-[25%] w-full h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
            [style]="{'background-image':'url('+item.image+')'}" *ngFor="let item of packages; let i = index"
-           (click)="navigateToEachComponent(i)">
+      >
         <div class="h-full">
           <div class="flex flex-col justify-between h-full">
             <p></p>
@@ -33,4 +33,23 @@
       </div>
     </div>
   </div>
+  <div [class]="{test}">
+    <p class="text-6xl font-text text-center tracking-wide">Packages</p>
+    <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
+      <div class="!p-0 md:w-[25%] w-full h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
+           [style]="{'background-image':'url('+items.image+')'}" *ngFor="let items of firebase; let i = index"
+           (click)="navigateEachComponent(items.label)">
+        <div class="h-full">
+          <div class="flex flex-col justify-between h-full">
+            <p></p>
+            <div class="bg-white py-[8px] px-[16px]">
+              <p class="text-center text-3xl tracking-widest">{{items.label}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+

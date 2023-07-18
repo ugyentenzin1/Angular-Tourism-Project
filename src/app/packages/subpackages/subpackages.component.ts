@@ -5,6 +5,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {PackagesService} from "../../Services/packages.service";
 import {Subscription, switchMap, tap} from "rxjs";
 import {Details} from "../../Interfaces/Details";
+import {AngularFireDatabase, AngularFireList, AngularFireObject} from "@angular/fire/compat/database";
 
 @Component({
   selector: 'app-subpackages',
@@ -17,26 +18,32 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   detailed!: Details;
   title!: Package;
   subscription!: Subscription;
+  eachPackages!: any[];
 
   @Input() packageTitle?: string;
   @Input() content?: boolean = true;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
-              private router : Router) {
+              private router : Router,
+              private firebaseData: AngularFireDatabase) {
   }
 
   ngOnInit(): void {
     this.subscription = this.route.paramMap.pipe(
       switchMap(val => {
-        const id = val.get('id');
-        return this.packageService.getById(id);
+        const label = val.get('id');
+        // return this.packageService.getById(id);
+        return this.packageService.getData(`${label}`);
       }),
       tap(value => {
-        this.title = value;
-        this.subPackages = value.subPackages;
+        // this.title = value;
+        // this.subPackages = value.subPackages;
+        console.log(value)
       })
     ).subscribe();
+
+
   }
 
   ngOnDestroy() {

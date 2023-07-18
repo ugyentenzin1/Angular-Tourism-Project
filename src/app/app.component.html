@@ -10,6 +10,8 @@
 </section>
 <div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''" class="content_bg">
   <router-outlet #routing="outlet"></router-outlet>
+  <p *ngFor="let items of testFire | async">{{items | json}}</p>
+  <button mat-button (click)="getFireData()">TestBTN</button>
 </div>
 <section class="relative">
   <div>
@@ -22,5 +24,4 @@
 </section>
 <div class="bg-[#708090]">
   <app-footer></app-footer>
-
 </div>
