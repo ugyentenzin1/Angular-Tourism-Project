@@ -41,7 +41,7 @@ export class PackagesService {
     return this.fireDataBase.list(`/${label}`).valueChanges();
   }
 
-  getDetails(label: string): Observable<any> {
-    return this.fireDataBase.list(`/${label}/details`).valueChanges()
+  getDetails(label: string):Observable<any> {
+    return this.fireDataBase.list(`${label}?details`).valueChanges();
   }
 }

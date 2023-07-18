@@ -14,8 +14,7 @@ import {Package} from "./Interfaces/packages";
 })
 export class AppComponent {
 
-  constructor(private router: Router,
-              private db: AngularFireDatabase) {
+  constructor(private router: Router) {
   }
   title = 'e-commerce';
  backgroundImageFooter = '/assets/paro-tak.jpeg'
@@ -30,11 +29,6 @@ export class AppComponent {
           behavior: 'smooth',
         });
       });
-  }
-
-  getFireData() {
-  this.testFire = this.db.list('/').valueChanges();
-   // console.log(this.testFire);
   }
 }
 
