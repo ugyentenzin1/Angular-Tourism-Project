@@ -6,7 +6,7 @@ import {DetailsPackagesComponent} from "../subpackages/details-packages/details-
 
 const routes: Routes = [
   {path: 'packages', component: PackagesComponent},
-  {path: 'packages/:id', component: SubpackagesComponent},
+  {path: 'packages/:label', component: SubpackagesComponent},
   {path: 'packages/:id/details', component: DetailsPackagesComponent},
 ];
 

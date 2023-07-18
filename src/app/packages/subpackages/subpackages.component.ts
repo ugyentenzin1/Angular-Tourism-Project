@@ -32,14 +32,15 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscription = this.route.paramMap.pipe(
       switchMap(val => {
-        const label = val.get('id');
+        console.log(val)
+        const label = val.get('label');
         // return this.packageService.getById(id);
         return this.packageService.getData(`${label}`);
       }),
       tap(value => {
-        // this.title = value;
-        // this.subPackages = value.subPackages;
+        this.eachPackages = value;
         console.log(value)
+
       })
     ).subscribe();
 

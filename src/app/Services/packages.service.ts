@@ -38,6 +38,10 @@ export class PackagesService {
   }
 
   getData(label: string):Observable<any> {
-    return this.fireDataBase.list(`${label}`).valueChanges().pipe(tap(console.log));
+    return this.fireDataBase.list(`/${label}`).valueChanges();
+  }
+
+  getDetails(label: string): Observable<any> {
+    return this.fireDataBase.list(`/${label}/details`).valueChanges()
   }
 }

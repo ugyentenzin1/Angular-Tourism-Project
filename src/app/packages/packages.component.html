@@ -37,8 +37,8 @@
     <p class="text-6xl font-text text-center tracking-wide">Packages</p>
     <div class="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[50px] mt-[20px] p-[20px] rounded-2xl">
       <div class="!p-0 md:w-[25%] w-full h-[300px] bg-no-repeat bg-center bg-cover cursor-pointer hover:brightness-95 hover:scale-95"
-           [style]="{'background-image':'url('+items.image+')'}" *ngFor="let items of firebase; let i = index"
-           (click)="navigateEachComponent(items.label)">
+           [style]="{'background-image':'url('+ items.image+ ')'}" *ngFor="let items of packagesData; let i = index"
+           (click)="navigateEachComponent(items.label.toLowerCase())">
         <div class="h-full">
           <div class="flex flex-col justify-between h-full">
             <p></p>
