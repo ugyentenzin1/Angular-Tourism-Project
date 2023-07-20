@@ -9,21 +9,64 @@
         "image": "",
         "days": "14 Days, 15 Nights",
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
-        "details": [
+        "details":[
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)",
-            "Day 11": "Robluthang to Lemithang, 19 km walk, alt. 4100m. This will be a long, hard day, crossing Sinchu La, the highest pass on the trek. It’s a tough climb from there to the Sinchu La Pass (5005m / 16,417ft), about five hours from camp. The snow covered peak of Gangchentag fills the horizon to the north. It’s then a short walk on a good trail through a cedar forest interspersed with small meadows to Limithang (4140m /13,786ft), a lovely camp site in a big meadow by the river. The peak of Gangchentag dominates the campsite, even though it’s quite a distance away",
-            "Day 12": "Roduphu to Narethang, 17 km walk, alt. 4500m. The trail leads uphill through dwarf rhododendron bushes and a barren area with ups and downs across boulders to Tsomo La (4780m / 15,917ft). Descend through more boulders to a camp at Narethang, a yak pasture used by Laya people.",
-            "Day 13": "Maurothang to Shepu, the trek ends with an 18 km descent to 2500m the trail follows the Nikka Rover through bamboo thickets and fields to the road at the Nikachu bridge (2670m / 8,891).",
-            "Day 14": "Drive to airport to check in for your early morning departure."
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       },
@@ -35,15 +78,46 @@
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
         "details": [
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)"
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       },
@@ -55,24 +129,62 @@
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
         "details": [
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)",
-            "Day 11": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 12": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 13": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 14": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 15": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 16": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 17": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 18": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 20": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)"
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       },
@@ -84,19 +196,62 @@
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
         "details": [
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)",
-            "Day 11": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 12": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 13": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 14": "Paro to Shana. The trek begins with a low altitude 17 km walk."
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       }
@@ -112,21 +267,64 @@
         "image": "",
         "days": "14 Days, 15 Nights",
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
-        "details": [
+        "details":[
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)",
-            "Day 11": "Robluthang to Lemithang, 19 km walk, alt. 4100m. This will be a long, hard day, crossing Sinchu La, the highest pass on the trek. It’s a tough climb from there to the Sinchu La Pass (5005m / 16,417ft), about five hours from camp. The snow covered peak of Gangchentag fills the horizon to the north. It’s then a short walk on a good trail through a cedar forest interspersed with small meadows to Limithang (4140m /13,786ft), a lovely camp site in a big meadow by the river. The peak of Gangchentag dominates the campsite, even though it’s quite a distance away",
-            "Day 12": "Roduphu to Narethang, 17 km walk, alt. 4500m. The trail leads uphill through dwarf rhododendron bushes and a barren area with ups and downs across boulders to Tsomo La (4780m / 15,917ft). Descend through more boulders to a camp at Narethang, a yak pasture used by Laya people.",
-            "Day 13": "Maurothang to Shepu, the trek ends with an 18 km descent to 2500m the trail follows the Nikka Rover through bamboo thickets and fields to the road at the Nikachu bridge (2670m / 8,891).",
-            "Day 14": "Drive to airport to check in for your early morning departure."
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       },
@@ -138,15 +336,62 @@
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
         "details": [
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)"
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       },
@@ -158,24 +403,62 @@
         "description": "Paro Taktsang, also known as the Tiger's Nest, is a prominent Himalayan Buddhist sacred site and temple complex located in the cliffside of the upper Paro valley.",
         "details": [
           {
-            "Day 1": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 2": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 3": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 4": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 5": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 6": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 7": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 8": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 10": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)",
-            "Day 11": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel.",
-            "Day 12": "Sightseeing in Paro Valley. Overnight at hotel.",
-            "Day 13": "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………",
-            "Day 14": "Paro to Shana. The trek begins with a low altitude 17 km walk.",
-            "Day 15": "Shana to Thangtahankha. Gradually gaining altitude to 3750m during a 9-10hrs hike of 22 km, the trail follows the Paro River and then goes through evergreens and rhododendron and at last entering into Jigme Dorji National Park.",
-            "Day 16": "Thangtahankha to Jangothang. This 19 km trail crosses up to 4000 m. Our night will spend at the Chomolhari Mountain base camp",
-            "Day 17": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft",
-            "Day 18": "Recovery day and a chance to wander around Lingshi and see the Lingshi Dzong.",
-            "Day 20": "Chebisa to Shomutang, 17 km walk, alt. 4250m. The walk is through wild pastures where we will probably see a few nomads and yaks. Our highest point will be when we cross Gobula Pass (4440m / 14564ft)"
+            "day 01": {
+              "title": "Arrive at Paro",
+              "plan": "Arrive at Paro, clear immigration and customs, Bhutan Jewel Travel personnel will meet as you at the exit point at the Paro airport, and take you to the hotel. Your Guide will accompany you and if time permits after refreshing at the hotel you can Visit the National Museum of Bhutan and Paro Dzong. Overnight at hotel."
+            },
+            "day 02" : {
+              "title": "Paro Valley",
+              "plan": "Sightseeing in Paro Valley. Overnight at hotel."
+            },
+            "day 03": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 04": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 05": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 06": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 07": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 08": {
+              "title": "Departure from paro Taktsang",
+              "plan": "Jangothang to Lingshi.19 km trail, alt. 4150m. Going through Wide Yak pastures on the way up and down the pass, we will have great views of Lingshi Dzong as we come down into the Lingshi basin. If the weather is clear Mt. Tserim Kang and its descending glaciers at the north end of the valley can be vividly seen. Today, the highest point we cross is the Nyile La Pass at almost 5000 but our camp is somewhat lower at 4010 m / 13,153 ft"
+            },
+            "day 09": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 10": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 11": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 12": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 13": {
+              "title": "Hike To Taktsang",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            },
+            "day 14": {
+              "title": "Bye bye Bhutan",
+              "plan" : "Walk/hike to Tiger’s Nest, Taktsang Monastery. Lunch at Taktsang teahouse with a spectacular view of the famous Tiger’s Nest monastery. Overnight at hotel.FROM THE 4th DAY, THE TREK BEGINS……………"
+            }
           }
         ]
       }

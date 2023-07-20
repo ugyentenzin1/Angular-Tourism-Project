@@ -1,11 +1,9 @@
-import {Component, OnDestroy, OnInit, Input} from '@angular/core';
-import {Package} from "../../Interfaces/packages";
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PackagesService} from "../../Services/packages.service";
-import {Subscription, switchMap, tap} from "rxjs";
-import {Details} from "../../Interfaces/Details";
-import {AngularFireDatabase, AngularFireList, AngularFireObject} from "@angular/fire/compat/database";
+import {Observable, Subscription, switchMap, tap} from "rxjs";
+import {Subproduct} from "../../Interfaces/Subproduct";
 
 @Component({
   selector: 'app-subpackages',
@@ -14,35 +12,37 @@ import {AngularFireDatabase, AngularFireList, AngularFireObject} from "@angular/
 })
 export class SubpackagesComponent implements OnInit, OnDestroy {
 
+  subId!: string | null
+
   subPackages!: PackageType[];
-  detailed!: Details;
-  title!: Package;
   subscription!: Subscription;
-  eachPackages!: any[];
+  eachPackages!: Observable<Subproduct[]>;
 
   @Input() packageTitle?: string;
   @Input() content?: boolean = true;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
-              private router : Router,
-              private firebaseData: AngularFireDatabase) {
+              private router : Router) {
   }
 
   ngOnInit(): void {
-    this.subscription = this.route.paramMap.pipe(
-      switchMap(val => {
-        console.log(val)
-        const label = val.get('label');
-        // return this.packageService.getById(id);
-        return this.packageService.getData(`${label}`);
-      }),
-      tap(value => {
-        this.eachPackages = value;
-        console.log(value)
+    // this.subscription = this.route.paramMap.pipe(
+    //   switchMap(val => {
+    //     const label = val.get('label');
+    //     // return this.packageService.getById(id);
+    //     return this.packageService.getData(`${label}`);
+    //   }),
+    //   tap(value => {
+    //     this.eachPackages = value;
+    //     console.log(value)
+    //   })
+    // ).subscribe();
 
-      })
-    ).subscribe();
+    this.subscription = this.route.paramMap.subscribe(value => {
+      this.subId = value.get('label');
+      this.eachPackages = this.packageService.getData(this.subId);
+    })
 
 
   }
@@ -52,10 +52,7 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   }
 
   details(id:any){
-    this.subPackages[id].id
     this.router.navigate([`details`],
       {relativeTo: this.route, queryParams:{subId: id}})
-
-    this.packageService.getBySubpackages(id).subscribe()
   }
 }

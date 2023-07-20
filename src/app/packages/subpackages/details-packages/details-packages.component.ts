@@ -1,21 +1,31 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {PackagesService} from "../../../Services/packages.service";
-import {Subscription, switchMap, tap} from "rxjs";
+import {Observable, Subscription, switchMap, tap} from "rxjs";
 import {TestMpa} from "../../../Interfaces/testMpa";
 import {MatDialog} from "@angular/material/dialog";
 import {BookNowComponent} from "./book-now/book-now.component";
 import {PackageType} from "../../../Interfaces/packageType";
+import {Subproduct} from "../../../Interfaces/Subproduct";
 
 
+interface Day {
+  title: string;
+  plan: string;
+}
 @Component({
   selector: 'app-details-packages',
   templateUrl: './details-packages.component.html',
   styleUrls: ['./details-packages.component.scss']
 })
+
+
 export class DetailsPackagesComponent implements OnInit, OnDestroy {
 
-  details?: TestMpa;
+  label!: string | null;
+  id!: string | null;
+  details$!: Observable<any>;
+  details!: any[];
   subscription?: Subscription;
 
   constructor(private route: ActivatedRoute,
@@ -23,10 +33,16 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
               private matDialog: MatDialog) { }
 
   ngOnInit(): void {
- this.subscription = this.route.queryParams.pipe(
-      switchMap(value => this.packageService.getTest(value['subId'])),
-      tap(value => this.details = value )
-    ).subscribe();
+
+   this.subscription = this.route.paramMap.subscribe(params=> {
+      this.label = params.get('label');
+      this.id = params.get('id');
+    this.details$ = this.packageService.getDetails(this.label, this.id);
+    })
+    this.details$.subscribe(value => {
+      this.details = value[0];
+      console.log(value[0])
+    })
   }
 
   ngOnDestroy() {
