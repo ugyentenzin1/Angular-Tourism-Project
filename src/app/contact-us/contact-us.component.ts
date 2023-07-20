@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ContactUsService} from "../Services/contact-us.service";
 import { FormBuilder, FormGroup} from "@angular/forms";
 import emailjs from '@emailjs/browser';
 
@@ -19,8 +18,7 @@ export class ContactUsComponent implements OnInit {
     tourist_no: ''
 });
 
-  constructor(private contactUsServices: ContactUsService ,
-              private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }

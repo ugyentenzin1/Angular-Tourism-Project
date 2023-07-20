@@ -41,7 +41,6 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
     })
     this.details$.subscribe(value => {
       this.details = value[0];
-      console.log(value[0])
     })
   }
 
