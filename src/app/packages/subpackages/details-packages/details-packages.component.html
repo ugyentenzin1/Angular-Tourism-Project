@@ -1,28 +1,26 @@
 <div class="md:p-[60px] flex md:flex-row flex-col">
   <div class="md:w-[70%] ml-[28px] mr-[28px]">
     <div class="my-[30px]">
-      <p class="text-4xl md:text-8xl">Detailed Itinerary </p>
+      <p class="text-4xl md:text-8xl">Detailed Itinerary</p>
       <p class="mt-[24px] text-justify text-black/60">Lorem ipsum dolor sit amet, consecrate adipisicing elit. Supernatural dolor magni
         molests omnibus repudiate rerun temporal voluptuary voluptuous. Harm iure aerobatic provident soluta
         tempora. Beate labor molests omnis reprehend voluptuous?</p>
     </div>
     <mat-accordion>
-      <mat-expansion-panel *ngFor="let item of [1,2,3,4,5,6]; let i = index;" class="!mt-[12px] !shadow-none !rounded-none">
-        <mat-expansion-panel-header class="flex flex-row justify-between text-white bg-[#708090] !py-[20px] h-[78px]">
-          <mat-panel-title>
-            <span class="!leading-7 text-white">DAYS {{item}} : ARRIVE AT PARO </span>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div class="md:p-[30px] p-[26px]">
-          <p class="text-justify text-black/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ducimus, incidunt laudantium
-            mollitia nesciunt odio quod repellendus vel voluptatum. Accusamus consequatur dicta dolorum, eaque
-            incidunt libero, molestias porro quam quas quo rem repellendus ullam ut. Enim et fuga iusto mollitia
-            nemo numquam perspiciatis qui recusandae. Autem nemo nobis nostrum reiciendis!</p>
-        </div>
-      </mat-expansion-panel>
+      <ng-container *ngFor="let obj of details | keyvalue">
+        <mat-expansion-panel class="!mt-[12px] !shadow-none !rounded-none">
+          <mat-expansion-panel-header class="flex flex-row justify-between text-white bg-[#708090] !py-[20px] h-[78px]">
+            <mat-panel-title>
+              <span class="!leading-7 text-white">{{obj.key | uppercase}}: {{obj.value?.title | titlecase}} </span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="md:p-[30px] p-[26px]">
+            <p class="text-justify text-black/60">{{obj.value?.plan}}</p>
+          </div>
+        </mat-expansion-panel>
+      </ng-container>
     </mat-accordion>
   </div>
-
   <div class="md:w-[40%] w-full md:ml-[30px] pl-[40px]">
     <h3 class="text-black/87 !text-xl mt-[30px]">Whats Included?</h3>
     <ul class="leading-11 text-black/60 list-disc p-[24px]">

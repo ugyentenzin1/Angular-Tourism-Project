@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {routingAnimation} from "./Interfaces/app.animation";
-import {filter} from "rxjs";
+import {filter, Observable} from "rxjs";
 import {NavigationEnd, Router} from "@angular/router";
 
 @Component({

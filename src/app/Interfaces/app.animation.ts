@@ -15,7 +15,7 @@ export const routingAnimation = trigger('slideAnimation', [
 
       query(':leave', [
         style({transition:''}),
-        animate('0.6s ease', style({transform: 'translateY(100%)'}))
+        animate('0.8s ease', style({transform: 'translateY(100%)'}))
       ],{optional: true})
     ])
   ])

@@ -1,10 +1,9 @@
-import {Component, OnDestroy, OnInit, Input} from '@angular/core';
-import {Package} from "../../Interfaces/packages";
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {PackageType} from "../../Interfaces/packageType";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PackagesService} from "../../Services/packages.service";
-import {Subscription, switchMap, tap} from "rxjs";
-import {Details} from "../../Interfaces/Details";
+import {Observable, Subscription, switchMap, tap} from "rxjs";
+import {Subproduct} from "../../Interfaces/Subproduct";
 
 @Component({
   selector: 'app-subpackages',
@@ -13,10 +12,11 @@ import {Details} from "../../Interfaces/Details";
 })
 export class SubpackagesComponent implements OnInit, OnDestroy {
 
+  subId!: string | null
+
   subPackages!: PackageType[];
-  detailed!: Details;
-  title!: Package;
   subscription!: Subscription;
+  eachPackages!: Observable<Subproduct[]>;
 
   @Input() packageTitle?: string;
   @Input() content?: boolean = true;
@@ -27,16 +27,24 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.subscription = this.route.paramMap.pipe(
-      switchMap(val => {
-        const id = val.get('id');
-        return this.packageService.getById(id);
-      }),
-      tap(value => {
-        this.title = value;
-        this.subPackages = value.subPackages;
-      })
-    ).subscribe();
+    // this.subscription = this.route.paramMap.pipe(
+    //   switchMap(val => {
+    //     const label = val.get('label');
+    //     // return this.packageService.getById(id);
+    //     return this.packageService.getData(`${label}`);
+    //   }),
+    //   tap(value => {
+    //     this.eachPackages = value;
+    //     console.log(value)
+    //   })
+    // ).subscribe();
+
+    this.subscription = this.route.paramMap.subscribe(value => {
+      this.subId = value.get('label');
+      this.eachPackages = this.packageService.getData(this.subId);
+    })
+
+
   }
 
   ngOnDestroy() {
@@ -44,10 +52,7 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   }
 
   details(id:any){
-    this.subPackages[id].id
     this.router.navigate([`details`],
       {relativeTo: this.route, queryParams:{subId: id}})
-
-    this.packageService.getBySubpackages(id).subscribe()
   }
 }

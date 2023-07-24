@@ -4,6 +4,7 @@ import {PackagesService} from "../Services/packages.service";
 import {Router} from "@angular/router";
 import {AnimationStyleMetadata, style} from "@angular/animations";
 import {Subscription} from "rxjs";
+import {Product} from "../Interfaces/Product";
 
 @Component({
   selector: 'app-packages',
@@ -16,22 +17,24 @@ export class PackagesComponent implements OnInit, OnDestroy {
   test!: AnimationStyleMetadata;
   subscription!: Subscription;
   packageShow: boolean = false;
+  packagesData!: Product[];
 
   constructor(private packageService: PackagesService,
               private router: Router) { }
 
   ngOnInit(): void {
-  this.subscription =  this.packageService.getPackages().subscribe(
-      (val) => this.packages = val
-    );
+  this.subscription = this.packageService.getFireDataTest().subscribe(val => {
+    this.packagesData = val;
+    console.log(val)
+  })
   }
 
   ngOnDestroy():void {
     this.subscription && this.subscription.unsubscribe();
   }
 
-  navigateToEachComponent(id:number):void {
-    this.router.navigate(['packages', id]);
+  navigateEachComponent(label: string | undefined) :void {
+    this.router.navigate(['/packages', label]);
   }
 
   showPackages() {
