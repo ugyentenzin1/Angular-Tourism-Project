@@ -55,3 +55,4 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
     })
   }
 }
+
