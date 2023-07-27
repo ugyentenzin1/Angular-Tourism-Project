@@ -28,7 +28,7 @@ import { BookNowComponent } from './packages/subpackages/details-packages/book-n
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {AngularFireModule} from "@angular/fire/compat";
-import {environment} from "../environments/environment";
+import { environment } from "../environments/environment.prod";
 
 @NgModule({
   declarations: [

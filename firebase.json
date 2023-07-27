@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/pala_tours",
+    "public": "dist/e-commerce",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "e-commerce-31737"
-  }
+    "default": "e-commerce-31737",
+    "pala": "pala-tours"
+  },
+  "targets": {},
+  "etags": {}
 }
