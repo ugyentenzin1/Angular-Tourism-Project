@@ -24,7 +24,7 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
   details$!: Observable<any>;
   details!: any[];
   subscription?: Subscription;
-  titlePackage!: Observable<any>;
+  package!: Observable<any>;
   eachPackage!: string;
   des!: string;
 
@@ -36,15 +36,12 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
     this.subscription = this.route.paramMap.subscribe(params=> {
       this.label = params.get('label');
       this.id = params.get('id');
-      this.details$ = this.packageService.getDetails(this.label, this.id);
-      this.titlePackage = this.packageService.getEachPackage(this.label, this.id);
+      this.package = this.packageService.getEachPackage(this.label, this.id);
     })
-    this.subscription = this.details$.subscribe(value => {
-      this.details = value[0];
-    })
-    this.subscription = this.titlePackage.pipe(tap(val=>{
+    this.subscription = this.package.pipe(tap(val=>{
       this.eachPackage = val.place;
       this.des = val.description;
+      this.details = val.details[0];
       }
     )).subscribe()
   }
