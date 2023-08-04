@@ -1,6 +1,6 @@
 <form action="" [formGroup]="form">
   <div mat-dialog-title class="p-[16px] bg-[slategray]">
-    <h2 class="text-[white]">Book for Your Memory</h2>
+    <h2 class="text-[white]">{{title}}</h2>
   </div>
   <mat-dialog-content class="!px-[24px]">
     <div>
@@ -12,11 +12,11 @@
         <mat-label>Email</mat-label>
         <input matInput type="text" name="email" formControlName="email">
       </mat-form-field>
-      <mat-form-field class="w-[47%] mr-[20px]">
+      <mat-form-field class="w-full mr-[20px] sm:w-[47%]">
         <input matInput type="date" name="arrival date" formControlName="arrival_date">
         <mat-label>Arrival Date</mat-label>
       </mat-form-field>
-      <mat-form-field class="w-[47%]">
+      <mat-form-field class="w-full sm:w-[47%]">
         <mat-label>Departure Date</mat-label>
         <input matInput type="date" name="Departure date" formControlName="departure_date">
       </mat-form-field>
@@ -32,6 +32,9 @@
         <mat-label>Contact No</mat-label>
         <input matInput type="text" name="Contact No" formControlName="contact_no">
       </mat-form-field>
+      <ngx-recaptcha2 [siteKey]="siteKey"
+                      formControlName="recaptcha">
+      </ngx-recaptcha2>
     </div>
   </mat-dialog-content>
   <mat-dialog-actions class="justify-end mb-16">

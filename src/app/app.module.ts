@@ -29,6 +29,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {AngularFireModule} from "@angular/fire/compat";
 import { environment } from "../environments/environment.prod";
+import {NgxCaptchaModule} from "ngx-captcha";
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { environment } from "../environments/environment.prod";
     MatDialogModule,
     ReactiveFormsModule,
     MatDatepickerModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    NgxCaptchaModule
   ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

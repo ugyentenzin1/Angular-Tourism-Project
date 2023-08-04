@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import emailjs from "@emailjs/browser";
 
 @Component({
@@ -10,15 +10,18 @@ import emailjs from "@emailjs/browser";
 })
 export class BookNowComponent implements OnInit {
 
+  siteKey: string = '6LcnwHgnAAAAAM09bnwj7bO0aUkoMwFESOmM862r';
+  title: string = 'Dhew';
+
   form: FormGroup = this.formBuilder.group({
-    focal_name: '',
-    email: '',
-    arrival_date: '',
-    departure_date: '',
-    head_count: '',
-    social_media_link: '',
-    contact_no: '',
-    package_name: ''
+    focal_name: ['', Validators.required, Validators.name],
+    email: ['', Validators.required, Validators.email],
+    arrival_date: ['', Validators.required],
+    departure_date: ['', Validators.required],
+    head_count: ['', Validators.required],
+    social_media_link: ['', Validators.required],
+    contact_no: ['', Validators.required],
+    recaptcha: ['', Validators.required]
   })
 
   constructor(private matDialogRef: MatDialogRef<any>,
@@ -40,6 +43,7 @@ export class BookNowComponent implements OnInit {
       social_media_link: this.form.value.social_media_link,
       contact_no: this.form.value.contact_no,
       reply_to: "Gagel Bhai Jann",
+      title: this.title,
     }).then(value => value);
     confirm('Are you sure want to Book?')
     this.form.reset();
@@ -48,5 +52,4 @@ export class BookNowComponent implements OnInit {
   cancel():void {
     this.matDialogRef.close();
   }
-
 }

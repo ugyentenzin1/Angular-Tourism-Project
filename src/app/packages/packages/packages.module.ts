@@ -7,6 +7,7 @@ import {SubpackagesComponent} from "../subpackages/subpackages.component";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
+import {NgxCaptchaModule} from "ngx-captcha";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatDialogModule} from "@angular/material/dialog";
         PackagesRoutingModule,
         MatExpansionModule,
         MatButtonModule,
-        MatDialogModule
+        MatDialogModule,
+        NgxCaptchaModule
     ]
 })
 export class PackagesModule { }

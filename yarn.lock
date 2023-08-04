@@ -7661,6 +7661,13 @@ netmask@^2.0.2:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-2.0.2.tgz#8b01a07644065d536383835823bc52004ebac5e7"
   integrity sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==
 
+ngx-captcha@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-captcha/-/ngx-captcha-11.0.0.tgz#5ee1093278586d111be57cc66116c832974fc8a4"
+  integrity sha512-C98h1ZtmiTz6LYF8xEd4A8jeT1oQO+l5evWaldFVMU3Fh2YsDDP+5F6g8itN0VA/Ep8rxkSk2MJePa1eWwJxHQ==
+  dependencies:
+    tslib "^2.3.0"
+
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"

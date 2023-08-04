@@ -13,13 +13,8 @@ import {Subproduct} from "../../Interfaces/Subproduct";
 export class SubpackagesComponent implements OnInit, OnDestroy {
 
   subId!: string | null
-
-  subPackages!: PackageType[];
   subscription!: Subscription;
   eachPackages!: Observable<Subproduct[]>;
-
-  @Input() packageTitle?: string;
-  @Input() content?: boolean = true;
 
   constructor(private route: ActivatedRoute,
               private packageService: PackagesService,
@@ -27,24 +22,10 @@ export class SubpackagesComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    // this.subscription = this.route.paramMap.pipe(
-    //   switchMap(val => {
-    //     const label = val.get('label');
-    //     // return this.packageService.getById(id);
-    //     return this.packageService.getData(`${label}`);
-    //   }),
-    //   tap(value => {
-    //     this.eachPackages = value;
-    //     console.log(value)
-    //   })
-    // ).subscribe();
-
     this.subscription = this.route.paramMap.subscribe(value => {
       this.subId = value.get('label');
       this.eachPackages = this.packageService.getData(this.subId);
     })
-
-
   }
 
   ngOnDestroy() {
