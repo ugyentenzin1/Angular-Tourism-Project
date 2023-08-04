@@ -25,7 +25,6 @@ export class PackagesComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
   this.subscription = this.packageService.getFireDataTest().subscribe(val => {
     this.packagesData = val;
-    console.log(val)
   })
   }
 
