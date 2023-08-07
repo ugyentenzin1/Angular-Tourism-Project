@@ -29,7 +29,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {AngularFireModule} from "@angular/fire/compat";
 import { environment } from "../environments/environment.prod";
-import {NgxCaptchaModule} from "ngx-captcha";
+import {RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY} from "ng-recaptcha";
 
 @NgModule({
   declarations: [
@@ -66,9 +66,12 @@ import {NgxCaptchaModule} from "ngx-captcha";
     ReactiveFormsModule,
     MatDatepickerModule,
     AngularFireModule.initializeApp(environment.firebase),
-    NgxCaptchaModule
+    RecaptchaV3Module
   ],
-  providers: [HeaderComponent],
+  providers: [{
+    provide: [HeaderComponent, RECAPTCHA_V3_SITE_KEY],
+    useValue: environment.firebase.recaptcha.siteKey
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

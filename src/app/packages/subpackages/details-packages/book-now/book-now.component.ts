@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import emailjs from "@emailjs/browser";
+import {ReCaptchaV3Service} from "ng-recaptcha";
 
 @Component({
   selector: 'app-book-now',
@@ -10,7 +11,6 @@ import emailjs from "@emailjs/browser";
 })
 export class BookNowComponent implements OnInit {
 
-  siteKey: string = '6LcnwHgnAAAAAM09bnwj7bO0aUkoMwFESOmM862r';
   title: string = 'Dhew';
 
   form: FormGroup = this.formBuilder.group({
@@ -21,11 +21,11 @@ export class BookNowComponent implements OnInit {
     head_count: ['', Validators.required],
     social_media_link: ['', Validators.required],
     contact_no: ['', Validators.required],
-    recaptcha: ['', Validators.required]
   })
 
   constructor(private matDialogRef: MatDialogRef<any>,
-              private formBuilder: FormBuilder) { }
+              private formBuilder: FormBuilder,
+              private recapChaV3: ReCaptchaV3Service) { }
 
   ngOnInit(): void {
   }
