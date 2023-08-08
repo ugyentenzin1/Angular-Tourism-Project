@@ -1,10 +1,9 @@
 <div class="md:p-[60px] flex md:flex-row flex-col">
   <div class="md:w-[70%] ml-[28px] mr-[28px]">
     <div class="my-[30px]">
-      <p class="text-4xl md:text-8xl">Detailed Itinerary</p>
-      <p class="mt-[24px] text-justify text-black/60">Lorem ipsum dolor sit amet, consecrate adipisicing elit. Supernatural dolor magni
-        molests omnibus repudiate rerun temporal voluptuary voluptuous. Harm iure aerobatic provident soluta
-        tempora. Beate labor molests omnis reprehend voluptuous?</p>
+      <p class="text-4xl md:text-8xl">{{eachPackage | titlecase}}</p>
+      <p class="text-2xl mt-4 md:text-4xl md:mt-8">Detailed Itinerary</p>
+      <p class="mt-[24px] text-justify text-black/60">{{des}}</p>
     </div>
     <mat-accordion>
       <ng-container *ngFor="let obj of details | keyvalue">

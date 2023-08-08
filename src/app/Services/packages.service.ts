@@ -28,8 +28,7 @@ export class PackagesService {
     );
   }
 
-  getDetails(label: string | null, id: string | null): Observable<any> {
-    return this.fireDataBase.object(`${label}/packages/${id}/details`).valueChanges()
-
+  getEachPackage(label: string | null, id: string | null): Observable<any> {
+    return this.fireDataBase.object(`${label}/packages/${id}/`).valueChanges()
   }
 }
