@@ -9,6 +9,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
 import { RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
 import {environment} from "../../../environments/environment.prod";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {environment} from "../../../environments/environment.prod";
         MatExpansionModule,
         MatButtonModule,
         MatDialogModule,
-        RecaptchaV3Module
+        RecaptchaV3Module,
+      MatNativeDateModule
     ],
   providers: [{
     provide: RECAPTCHA_V3_SITE_KEY,

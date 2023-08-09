@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {MatDialogRef} from "@angular/material/dialog";
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import emailjs from "@emailjs/browser";
-import {ReCaptchaV3Service} from "ng-recaptcha";
 
 @Component({
   selector: 'app-book-now',
@@ -10,8 +9,7 @@ import {ReCaptchaV3Service} from "ng-recaptcha";
   styleUrls: ['./book-now.component.scss']
 })
 export class BookNowComponent implements OnInit {
-
-  title: string = 'Dhew';
+  title!: string;
 
   form: FormGroup = this.formBuilder.group({
     focal_name: ['', Validators.required, Validators.name],
@@ -25,9 +23,11 @@ export class BookNowComponent implements OnInit {
 
   constructor(private matDialogRef: MatDialogRef<any>,
               private formBuilder: FormBuilder,
-              private recapChaV3: ReCaptchaV3Service) { }
+              @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
 
   ngOnInit(): void {
+    this.title = this.data.title;
   }
 
   confirmation():void {

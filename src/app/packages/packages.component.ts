@@ -39,7 +39,7 @@ export class PackagesComponent implements OnInit, OnDestroy {
   showPackages() {
     this.packageShow = !this.packageShow;
    this.test = style({
-      background: 'yellow'
+      transition: 'all'
     })
   }
 }

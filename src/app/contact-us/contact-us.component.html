@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-center items-center contact-us font-medium p-[36px]">
   <h1 class="my-[24px]">Contact Us</h1>
   <p class="my-[16px] text-justify text-black/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto corporis dicta ducimus illum laborum minus molestiae possimus sapiente veritatis.</p>
-  <div class="contact-us__form flex md:flex-row flex-col">
+  <div class="contact-us__form flex md:justify-end md:flex-row flex-col">
     <div class="md:w-[40%]">
       <p class="contact-us__heading">Reach To Us</p>
       <div class="flex flex-row flex-wrap" [formGroup]="form" (ngSubmit)="send()">
@@ -29,7 +29,8 @@
           <mat-label>Message</mat-label>
           <textarea matInput rows="8" formControlName="message" placeholder="Message"></textarea>
         </mat-form-field>
-        <button type="submit" (click)="send()" mat-button class="bg-[slategray] active:bg-blue-300 text-white !py-[10px] !px-[80px]">Submit</button>
+        <div (click)="send()" class="flex mt-[16px] items-center cursor-pointer justify-center rounded-[6px] w-fit
+       md:px-[44px] md:py-[15px] bg-[#708090] border-2 text-white hover:border-3 hover:border-[#708090] hover:bg-transparent hover:text-[#708090]">Submit</div>
       </div>
     </div>
     <div class="md:w-[50%] w-full md:ml-[36px] mt-[16px] p-[24px] bg-[slategray] text-white/70 mr-[50px] flex justify-center items-center">
