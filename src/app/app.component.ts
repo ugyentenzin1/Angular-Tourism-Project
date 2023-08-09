@@ -1,6 +1,6 @@
 import {Component, OnDestroy} from '@angular/core';
 import {routingAnimation} from "./Interfaces/app.animation";
-import {filter, Observable, Subscription} from "rxjs";
+import {filter, Subscription} from "rxjs";
 import {NavigationEnd, Router} from "@angular/router";
 import {ReCaptchaV3Service} from "ng-recaptcha";
 
@@ -26,7 +26,7 @@ export class AppComponent implements OnDestroy{
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event) => {
         window.scrollTo({
-          top: 200,
+          top: 100,
           behavior: 'smooth',
         });
         this.recapChaV3Service.execute('importantAction').subscribe((token: string) => {

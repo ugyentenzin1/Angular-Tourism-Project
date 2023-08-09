@@ -1,14 +1,19 @@
 .parallax {
-  @apply relative h-[80vh] bg-[url("/assets/bhutan.avif")] bg-fixed bg-center bg-no-repeat bg-cover brightness-50 z-[-1];
+  @apply relative h-[80vh] bg-[url("/assets/background_bg.jpeg")] bg-fixed bg-center bg-no-repeat bg-cover brightness-50 z-[-1];
 }
 
 .parallax-content {
   transform: translate(-50%, -50%);
-  @apply absolute top-[46%] left-[38%] text-white text-center;
+  @apply absolute top-[40%] left-[50%] text-white text-center;
+}
+
+.parallax-footer {
+  transform: translate(-50%, -50%);
+  @apply absolute top-[46%] left-[78%] text-white text-center;
 }
 
 .heading {
-  @apply text-7xl text-white font-extrabold z-[-1];
+  @apply text-white z-[-1];
 }
 
 .relative {

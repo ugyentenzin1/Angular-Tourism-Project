@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener("document:scroll")
   navBgChange(){
-    document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ? this.hasScrolled = true : this.hasScrolled = false;
+    document.body.scrollTop > 0 || document.documentElement.scrollTop > 200 ? this.hasScrolled = true : this.hasScrolled = false;
   }
 
   toogleSideNav() {

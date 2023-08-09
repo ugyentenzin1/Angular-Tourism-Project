@@ -35,7 +35,7 @@ export class ContactUsComponent implements OnInit {
       whatsapp_no: this.form.value.whatsapp_no,
       tourist_no: this.form.value.tourist_no
     }).then(event  => event);
-    alert('Message has been send');
+    confirm('Are you sure want to send the message?');
     this.form.reset();
   }
 }

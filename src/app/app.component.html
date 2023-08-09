@@ -3,24 +3,31 @@
   <div>
     <div class="parallax">
     </div>
-    <div class="parallax-content">
+    <div class="parallax-content flex flex-col justify-center items-center">
       <h1 class="text-4xl md:text-6xl tracking-wide mb-[32px]">PALA TOURS & TRAVELS</h1>
-      <p class="w-[55%] text-[#dfe5ec] ml-[22%]">Aria is a top consultancy company specializing in business growth using online marketing and conversion optimization tactics</p>
+      <p class="w-[64%] text-[#dfe5ec]">Pala tours and travel is a trustworthy company specialized in tourism and conversion optimization tactics</p>
+      <div  class="flex mt-[24px] items-center cursor-pointer justify-center rounded-[6px] w-fit
+       md:px-[44px] md:py-[15px] bg-[#708090] border-2 text-white hover:border-3 hover:border-[#708090] hover:bg-transparent hover:text-[#708090]"
+            routerLink="packages/packages">
+        DISCOVER
+      </div>
     </div>
   </div>
 </section>
 <div [@slideAnimation]="routing.isActivated ? routing.activatedRoute : ''" class="content_bg">
   <router-outlet #routing="outlet"></router-outlet>
-<!--  <div *ngIf="tokenVisible"> reCAPTCHA Token <br/>-->
-<!--    <p style="color:red">{{reCAPTCHAToken}}</p>-->
-<!--  </div>-->
+  <!--  <div *ngIf="tokenVisible"> reCAPTCHA Token <br/>-->
+  <!--    <p style="color:red">{{reCAPTCHAToken}}</p>-->
+  <!--  </div>-->
 </div>
 <section class="relative">
   <div>
     <div class="parallax" [style.background-image]="'url(' + backgroundImageFooter + ')'">
     </div>
-    <div class="parallax-content">
-      <h1 class="heading font-heading">THANK YOU</h1>
+    <div class="parallax-footer">
+      <h1 class="italic">THANK YOU</h1>
+      <p class="italic mt-[24px] text-2xl">“Will you give me yourself? Will you come travel with me? Shall we stick by each other as long as we live?”</p>
+      <p class="italic text-center"> – Walt Whitman</p>
     </div>
   </div>
 </section>
