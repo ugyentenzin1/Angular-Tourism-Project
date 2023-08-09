@@ -26,7 +26,7 @@ export class AppComponent implements OnDestroy{
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event) => {
         window.scrollTo({
-          top: 100,
+          top: 80,
           behavior: 'smooth',
         });
         this.recapChaV3Service.execute('importantAction').subscribe((token: string) => {
