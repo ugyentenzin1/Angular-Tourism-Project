@@ -50,10 +50,13 @@ export class DetailsPackagesComponent implements OnInit, OnDestroy {
     this.subscription && this.subscription.unsubscribe();
   }
 
-  openBookModal(): void {
+  openBookModal(title: string): void {
     this.matDialog.open(BookNowComponent, {
       width: '720px',
-      closeOnNavigation: true
+      closeOnNavigation: true,
+      data : {
+        title: title
+      }
     })
   }
 }
